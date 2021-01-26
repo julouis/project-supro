@@ -2,8 +2,17 @@ div {
   border: 1px solid black;
 }
 
-@media screen and (min-width: 900px) {
-  .my-row-header {
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/fonts/Roboto/Roboto-Regular.ttf"), url("/src/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+body {
+  font-family: "Roboto";
+}
+
+@media screen and (min-width: 1450px) {
+  header {
     background-image: url(/src/homepage/resources/sl3-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,8 +22,8 @@ div {
   }
 }
 
-@media (max-width: 1400px) and (min-width: 500px) {
-  .my-row-header {
+@media (max-width: 1450px) and (min-width: 500px) {
+  header {
     background-image: url(/src/homepage/resources/sl3-1.jpg);
     background-size: cover;
     background-position-x: center;
@@ -25,6 +34,7 @@ div {
 
 .my-col-header {
   position: relative;
+  min-height: 70vh;
 }
 
 .my-col-header .text {
@@ -35,26 +45,17 @@ div {
   color: wheat;
 }
 
-.my-col-1, .my-col-2, .my-col-3 {
+.my-col-1,
+.my-col-2,
+.my-col-3 {
   position: relative;
 }
 
-.my-col-1 .text, .my-col-2 .text, .my-col-3 .text {
+.my-col-1 .text,
+.my-col-2 .text,
+.my-col-3 .text {
   position: absolute;
   top: 20%;
-  left: 20%;
-}
-
-.my-col-1 .text2, .my-col-2 .text2, .my-col-3 .text2 {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-}
-
-.my-col-1 .text3, .my-col-2 .text3, .my-col-3 .text3 {
-  position: absolute;
-  top: 20%;
-  left: 20%;
 }
 
 .my-col-1 {
@@ -62,6 +63,11 @@ div {
   background-size: cover;
   background-position-x: right;
   min-height: 400px;
+  text-align: right;
+}
+
+.my-col-1 .text {
+  left: 10%;
 }
 
 .my-col-2 {
@@ -69,6 +75,12 @@ div {
   background-size: cover;
   background-position-x: center;
   min-height: 400px;
+  text-align: center;
+}
+
+.my-col-2 .text {
+  left: 30%;
+  right: 30%;
 }
 
 .my-col-3 {
@@ -76,5 +88,54 @@ div {
   background-size: cover;
   background-position-x: left;
   min-height: 400px;
+  text-align: right;
+}
+
+.my-col-3 .text {
+  right: 10%;
+}
+
+.my-row-top-sellers {
+  position: relative;
+  height: 20vh;
+}
+
+.my-row-top-sellers .text {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.big-tile .text {
+  height: 150px;
+}
+
+.big-tile .text .sm-grey-text {
+  color: #999;
+}
+
+.big-tile .text .big-text {
+  margin-top: -10px;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.big-tile .text .sm-underline-text {
+  margin-top: 15%;
+  font-size: small;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
 }
 /*# sourceMappingURL=style.css.map */

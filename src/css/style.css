@@ -1,0 +1,12 @@
+div {
+  border: 1px solid black;
+}
+
+.text1 {
+  position: relative;
+}
+
+.text1 p {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */

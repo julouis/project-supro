@@ -2,9 +2,78 @@ div {
     border: 1px solid black;
 }
 
-.text1 {
-    position: relative;
-    p {
-        position: absolute;
+
+@media screen and (min-width:900px) {
+.my-row-header {
+    background-image: url(/src/homepage/resources/sl3-1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -150px;
+    min-height: 70vh;
     }
+}
+
+@media (max-width: 1400px) and (min-width:500px) {
+
+.my-row-header {
+    background-image: url(/src/homepage/resources/sl3-1.jpg);
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 70vh;
+}}
+
+.my-col-header {
+    position: relative;
+    .text {
+        position: absolute;
+        top: 25vh;
+        left: 40vw;
+        right: 40vw;
+        color: wheat;
+        
+    }
+}
+
+
+.my-col-1,.my-col-2,.my-col-3 {
+    position: relative;
+    .text {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    .text2 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    .text3 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+}
+
+.my-col-1 {
+    background-image: url(/src/homepage/resources/banner_h1_1.jpg);
+    background-size: cover;
+    background-position-x: right;
+    min-height:400px;
+    
+}
+
+.my-col-2 {
+    background-image: url(/src/homepage/resources/banner_h1_2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    min-height: 400px;
+}
+
+.my-col-3 {
+    background-image:url(/src/homepage/resources/banner_h1_3.jpg) ;
+    background-size: cover;
+    background-position-x: left;
+    min-height: 400px;
 }

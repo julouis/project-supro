@@ -20,6 +20,7 @@ body {
 
 span {
 	display: block;
+	margin-top: -10px;
 }
 
 header {
@@ -81,6 +82,9 @@ header {
 	.text {
 		left: 30%;
 		right: 30%;
+		p,a {
+			color:white;
+		}
 	}
 }
 
@@ -92,6 +96,7 @@ header {
 	text-align: right;
 	.text {
 		right: 10%;
+	
 	}
 }
 
@@ -102,6 +107,14 @@ header {
 		position: absolute;
 		top: 30%;
 		left: 30%;
+		.top-sellers {
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.browse-text {
+			color: gray;
+			margin-top: -15px;
+		}
 	}
 }
 

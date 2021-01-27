@@ -15,6 +15,7 @@ body {
 
 span {
   display: block;
+  margin-top: -10px;
 }
 
 header {
@@ -83,6 +84,10 @@ header {
   right: 30%;
 }
 
+.my-col-hairband-collection-middle .text p, .my-col-hairband-collection-middle .text a {
+  color: white;
+}
+
 .my-col-corduroy-culottes {
   background-image: url(/homepage/resources/banner_h1_3.jpg);
   background-size: cover;
@@ -104,6 +109,16 @@ header {
   position: absolute;
   top: 30%;
   left: 30%;
+}
+
+.my-row-top-sellers .text .top-sellers {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.my-row-top-sellers .text .browse-text {
+  color: gray;
+  margin-top: -15px;
 }
 
 a {

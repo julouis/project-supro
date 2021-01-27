@@ -1,0 +1,222 @@
+div {
+  border: px solid black;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Regular.ttf"), url("/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+body {
+  font-family: "Roboto";
+  overflow-x: hidden;
+  background-color: white;
+}
+
+span {
+  display: block;
+}
+
+header {
+  background-image: url(/homepage/resources/sl3-1.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -150px;
+  min-height: 70vh;
+}
+
+@media (max-width: 1450px) and (min-width: 500px) {
+  header {
+    background-position-y: bottom;
+  }
+}
+
+.my-col-header {
+  position: relative;
+  min-height: 70vh;
+}
+
+.my-col-header .text {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.my-col-header .text a {
+  color: white;
+}
+
+.big-tile {
+  position: relative;
+}
+
+.big-tile .text {
+  position: absolute;
+  top: 20%;
+}
+
+.my-col-hairband-collection-left {
+  background-image: url(/homepage/resources/banner_h1_1.jpg);
+  background-size: cover;
+  background-position-x: right;
+  min-height: 400px;
+  text-align: right;
+}
+
+.my-col-hairband-collection-left .text {
+  left: 10%;
+}
+
+.my-col-hairband-collection-middle {
+  background-image: url(/homepage/resources/banner_h1_2.jpg);
+  background-size: cover;
+  background-position-x: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.my-col-hairband-collection-middle .text {
+  left: 30%;
+  right: 30%;
+}
+
+.my-col-corduroy-culottes {
+  background-image: url(/homepage/resources/banner_h1_3.jpg);
+  background-size: cover;
+  background-position-x: left;
+  min-height: 400px;
+  text-align: right;
+}
+
+.my-col-corduroy-culottes .text {
+  right: 10%;
+}
+
+.my-row-top-sellers {
+  position: relative;
+  height: 20vh;
+}
+
+.my-row-top-sellers .text {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.text {
+  height: 150px;
+}
+
+.text .sm-grey-text {
+  color: grey;
+}
+
+.text .big-text {
+  margin-top: -10px;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.text .sm-underline-text {
+  margin-top: 15%;
+  font-size: small;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.my-col-leather-shop-bag {
+  background-image: url(/homepage/resources/bsl1.jpg);
+  background-size: cover;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  min-height: 500px;
+  text-align: right;
+}
+
+.my-col-leather-shop-bag .text {
+  text-align: left;
+  left: 10%;
+  top: 70%;
+}
+
+.my-col-flower-design-blouse {
+  background-image: url(/homepage/resources/bsl2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  min-height: 500px;
+  text-align: right;
+}
+
+.my-col-flower-design-blouse .text {
+  text-align: left;
+  left: 15%;
+}
+
+.my-col-glitter-decorated-shoes {
+  background-image: url(/homepage/resources/bsl3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 50%;
+  min-height: 500px;
+  text-align: right;
+}
+
+.my-col-glitter-decorated-shoes .text {
+  text-align: left;
+  left: 15%;
+}
+
+.my-col-metallic-frame-glasses {
+  background-image: url(/homepage/resources/bsl4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 70%;
+  min-height: 500px;
+  text-align: right;
+}
+
+.my-col-metallic-frame-glasses .text {
+  text-align: left;
+  left: 40%;
+  top: 55%;
+}
+
+.middle-tile .text .big-text {
+  font-size: 1.5em;
+}
+
+.my-row-new-arrival {
+  margin-top: 2vw;
+  position: relative;
+}
+
+.my-row-new-arrival ul {
+  position: absolute;
+  right: 0px;
+  list-style: none;
+}
+
+.my-row-new-arrival ul a {
+  margin: 20px;
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */

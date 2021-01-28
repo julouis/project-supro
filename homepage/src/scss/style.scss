@@ -139,17 +139,16 @@ a {
 			font-size: 2.2em;
 			font-weight: bold;
 		}
-		.sm-underline-text {
-			margin-top: 15%;
-			font-size: small;
-			font-weight: bold;
-			text-decoration: underline;
-			text-underline-offset: 3px;
-			text-decoration-thickness: 2px;
-		}
+
 	}
 
-
+	.sm-underline-text {
+		font-size: small;
+		font-weight: bold;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		text-decoration-thickness: 2px;
+	}
 
 
 .my-col-leather-shop-bag {
@@ -239,17 +238,19 @@ a {
 	height: 20vh;
 	.text {
 		position: absolute;
-		.middle-banner-title {
-			font-size: 2em;
-			font-weight: bold;
+
 		}
 		.sm-grey-text {
 			color: gray;
 			margin-top: -15px;
 		}
 	}
-}
 
+
+.middle-banner-title {
+	font-size: 2em;
+	font-weight: bold;
+}
 .my-row-new-arrival-products {
 	display: flex;
 	justify-content: center;
@@ -279,13 +280,16 @@ a {
 	width: 100vw;
 	padding-top: 20px;
 	height: 10vh;
-	a {
-		margin-top: 15%;
-		font-size: small;
-		font-weight: bold;
-		text-decoration: underline;
-		text-underline-offset: 3px;
-		text-decoration-thickness: 2px;
-		font-size: 0.9em;
+}
+
+.hobo-shopper-bag {
+	height: 70vh;
+	background-image: url(/homepage/resources/deals_image.jpg);
+	background-position-y: bottom;
+	background-position-x: right;
+	background-size: 95%;
+	.text {
+		margin-left: 15vw;
+		margin-top:10vh ;
 	}
 }

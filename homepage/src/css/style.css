@@ -145,8 +145,7 @@ a:hover {
   font-weight: bold;
 }
 
-.text .sm-underline-text {
-  margin-top: 15%;
+.sm-underline-text {
   font-size: small;
   font-weight: bold;
   text-decoration: underline;
@@ -244,14 +243,14 @@ a:hover {
   position: absolute;
 }
 
-.my-row-new-arrival .text .middle-banner-title {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.my-row-new-arrival .text .sm-grey-text {
+.my-row-new-arrival .sm-grey-text {
   color: gray;
   margin-top: -15px;
+}
+
+.middle-banner-title {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .my-row-new-arrival-products {
@@ -292,13 +291,16 @@ a:hover {
   height: 10vh;
 }
 
-.discover-more a {
-  margin-top: 15%;
-  font-size: small;
-  font-weight: bold;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 2px;
-  font-size: 0.9em;
+.hobo-shopper-bag {
+  height: 70vh;
+  background-image: url(/homepage/resources/deals_image.jpg);
+  background-position-y: bottom;
+  background-position-x: right;
+  background-size: 95%;
+}
+
+.hobo-shopper-bag .text {
+  margin-left: 15vw;
+  margin-top: 10vh;
 }
 /*# sourceMappingURL=style.css.map */

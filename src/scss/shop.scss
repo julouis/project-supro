@@ -1,0 +1,109 @@
+@import "_variables.scss";
+@import "_header.scss";
+@font-face {
+    font-family: "Roboto";
+    src: url("/src/Font/roboto-regular-webfont.woff2") format("woff2"), url("/src/Font/roboto-regular-webfont.woff") format("woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr;
+    gap: 10px 10px;
+    grid-template-areas: "Side Top Top Top" "Side Image-1 Image-2 Image-3" "Side Image-4 Image-5 Image-6" "Side Image-7 Image-8 Image-9" "Side Image-10 Image-11 Image-12";
+}
+
+.Side {
+    grid-area: Side;
+}
+
+.Top {
+    display: grid;
+    align-items: start;
+    justify-content: space-between;
+    grid-area: Top;
+}
+
+.Image-1 {
+    grid-area: Image-1;
+}
+
+.Image-2 {
+    grid-area: Image-2;
+}
+
+.Image-3 {
+    grid-area: Image-3;
+}
+
+.Image-4 {
+    grid-area: Image-4;
+}
+
+.Image-5 {
+    grid-area: Image-5;
+}
+
+.Image-6 {
+    grid-area: Image-6;
+}
+
+.Image-7 {
+    grid-area: Image-7;
+}
+
+.Image-8 {
+    grid-area: Image-8;
+}
+
+.Image-9 {
+    grid-area: Image-9;
+}
+
+.Image-10 {
+    grid-area: Image-10;
+}
+
+.Image-11 {
+    grid-area: Image-11;
+}
+
+.Image-12 {
+    grid-area: Image-12;
+}
+
+.icons {
+    width: 20px;
+}
+
+i [class*="fi"] {
+    color: $orange;
+}
+
+.sidebar {
+    img {
+        width: 85px;
+    }
+    ;
+    fieldset {
+        border: none;
+        ul {
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+}

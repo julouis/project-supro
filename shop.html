@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Shop</title>
-    <link rel="stylesheet" type="text/css" href="src/scss/style.scss">
+    <link rel="stylesheet" href="src/css/Normalize.css">
+    <link rel="stylesheet" href="src/css/shop.css">
+    <script src="src/Script/script.js"></script>
 </head>
+
 
 <body>
     <header>
@@ -18,140 +21,379 @@
                 <li><a href="pages.html">Pages</a></li>
                 <li><a href="blog.html">Collection</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <input type="text" placeholder="Search..">
-                <div></div>
-                <div></div>
-                <div></div>
+                <form class="rechercher" method="GET" action="rechercher.php">
+                    <input type="text" placeholder="Search">
+                </form>
+
+                <img class="icons" src="Images/fi-rr-search.svg">
+                <img class="icons" src="Images/fi-rr-users.svg">
+                <img class="icons" src="Images/fi-rr-heart.svg">
+                <img class="icons" src="Images/fi-rr-shopping-cart.svg">
+                <img class="icons" src="Images/fi-rr-menu-burger.svg">
             </ul>
         </nav>
     </header>
-
-    <div class="sidebar">
-        <fieldset>
-            <h2>
-                Active filters
-            </h2>
-            <ul>
-                <li>
-                    Min £ 9.00
-                </li>
-                <li>
-                    Max £ 9.00
-                </li>
-                <li>
-                    Remove all filter
-                </li>
-            </ul>
-        </fieldset>
-
-        <fieldset>
-            <h2>Categories</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Clothing</a></li>
-                    <li><a href="#">Hats & Gloves</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">More Accessories</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">T-Shirt</a></li>
-                    <li><a href="#">Wallets & Cases</a></li>
-                    <li><a href="#">Women</a></li>
-                </ul>
-            </nav>
-        </fieldset>
-
-        <fieldset>
-            <h2>
-                Filter price
-            </h2>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-            </div>
-            <div class="inline-input five-digits">
-                <p>price : £ 0 - £ 100</p>
-            </div>
-        </fieldset>
-        <fieldset class="colors">
-            <ul>
-                <li>
-                    <div></div> Black
-                </li>
-                <li>
-                    <div></div> Blue
-                </li>
-                <li>
-                    <div></div> Gold
-                </li>
-                <li>
-                    <div></div> Nude
-                </li>
-                <li>
-                    <div></div> Orange
-                </li>
-                <li>
-                    <div></div> Red
-                </li>
-                <li>
-                    LMSXL
-                </li>
-            </ul>
-        </fieldset>
-        <fieldset>
-
-            <h2>Products</h2>
-            <img src="Images/3 (1).jpg">
-            <p>
-                Embroidered Fl...
-            </p>
-            <div>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xwluxl-star-solid"></i>
-                <i class="fi-xwluxl-star-wide"></i>
-            </div>
-            <p>
-                £ 56.89
-            </p>
-            <img src="Images/prd_05_20.jpg">
-            <p>
-                Contrast Backp...
-            </p>
-            <div>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xwluxl-star-solid"></i>
-                <i class="fi-xwluxl-star-wide"></i>
-            </div>
-            <p>
-                £ 56.89
-            </p>
-
-            <img src="Images/5.jpg">
-            <p>
-                Mango Women'...
-            </p>
-            <div>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xnsuxl-star-solid"></i>
-                <i class="fi-xwluxl-star-solid"></i>
-                <i class="fi-xwluxl-star-wide"></i>
-            </div>
-            <p>
-                £ 89.59
-            </p>
-
-        </fieldset>
-
-    </div>
-
     <main>
+        <div class="grid-container">
+
+            <div class="Side sidebar">
+                <fieldset>
+                    <h2>
+                        Active filters
+                    </h2>
+                    <ul>
+                        <li>
+                            Min £ 9.00
+                        </li>
+                        <li>
+                            Max £ 9.00
+                        </li>
+                        <li>
+                            Remove all filter
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <h2>Categories</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Hats & Gloves</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">More Accessories</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">T-Shirt</a></li>
+                            <li><a href="#">Wallets & Cases</a></li>
+                            <li><a href="#">Women</a></li>
+                        </ul>
+                    </nav>
+                </fieldset>
+
+                <fieldset>
+                    <h2>
+                        Filter price
+                    </h2>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div class="inline-input five-digits">
+                        <p>price : £ 0 - £ 100</p>
+                    </div>
+                </fieldset>
+                <fieldset class="colors">
+                    <ul>
+                        <li>
+                            <div></div>
+                            <div>
+                                <label for="Black">Black</label>
+                                <input type="checkbox" id="Black" name="Black" checked>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div></div>
+                            <div>
+                                <label for="Blue">Blue</label>
+                                <input type="checkbox" id="Blue" name="Blue">
+
+                            </div>
+                        </li>
+                        <li>
+                            <div></div>
+                            <div>
+                                <label for="Gold">Gold</label>
+                                <input type="checkbox" id="Gold" name="Gold">
+                            </div>
+
+                        </li>
+                        <li>
+                            <div></div>
+                            <div>
+                                <label for="Nude">Nude</label>
+                                <input type="checkbox" id="Nude" name="Nude">
+                            </div>
+
+                        </li>
+                        <li>
+                            <div></div>
+                            <div>
+                                <label for="Orange">Orange</label>
+                                <input type="checkbox" id="Orange" name="Orange">
+                            </div>
+
+                        </li>
+                        <li>
+                            <div></div>
+                            <div>
+                                <label for="Red">Red</label>
+                                <input type="checkbox" id="Red" name="Red">
+                            </div>
+                        </li>
+                        <li>
+                            LMSXL
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+
+                    <h2>Products</h2>
+                    <img src="Images/3 (1).jpg">
+                    <p>
+                        Embroidered Fl...
+                    </p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 56.89
+                    </p>
+                    <img src="Images/prd_05_20.jpg">
+                    <p>
+                        Contrast Backp...
+                    </p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 56.89
+                    </p>
+
+                    <img src="Images/5.jpg">
+                    <p>
+                        Mango Women'...
+                    </p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 89.59
+                    </p>
+
+                </fieldset>
+
+            </div>
 
 
+            <div class="Top">
+                <div class="shop">
+                    <h1>
+                        Shop
+                    </h1>
+                    <a href="index.html">Home</a>
+                    <p>.</p>
+                    <a href="shop.html">Shop</a>
+                </div>
+                <section>
+                    <div>
+                        <h2>
+                            25 Products Found
+                        </h2>
+                        <a href="#">Filter</a>
+
+                        <h2>Sort by</h2>
+                        <ul>
+                            <li><a href="#">Default</a></li>
+                        </ul>
+                        <img class="icons" src="Images/fi-rr-grid.svg">
+                        <img class="icons" src="Images/fi-rr-list.svg">
+                    </div>
+                </section>
+            </div>
+            <section>
+                <div class="Image-1">
+                    <img src="Images/1.jpg">
+                    <p>Aviator Sunlasses</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 9.90
+                    </p>
+
+                </div>
+                <div class="Image-2">
+                    <img src="Images/prd_05_20.jpg" style="width: 400px;">
+                    <p>Contrast Backpack</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 69.90
+                    </p>
+                </div>
+                <div class="Image-3">
+                    <img src="Images/3 (1).jpg">
+                    <p>Embroidered Flowy Jacket</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 56.89
+                    </p>
+                </div>
+                <div class="Image-4">
+                    <img src="Images/4.jpg">
+                    <p>Floral Short Jumpsuit</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 97.99
+                    </p>
+                </div>
+                <div class="Image-5">
+                    <img src="Images/5.jpg">
+                    <p>Mango Women's Bag</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 89.90
+                    </p>
+                </div>
+                <div class="Image-6">
+                    <img src="Images/6.jpg">
+                    <p>Glitter Decorated Shoes</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 56.90
+                    </p>
+                </div>
+                <div class="Image-7">
+                    <img src="Images/7.jpg">
+                    <p>Contrasting Design T-Shirt</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xnsuxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-solid"></i>
+                        <i class="fi-xwluxl-star-wide"></i>
+                    </div>
+                    <p>
+                        £ 95.90
+                    </p>
+                </div>
+                <div class="Image-8">
+                    <img src="Images/8.jpg">
+                    <p>Furry Hooded Parka</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-wide "></i>
+                    </div>
+                    <p>
+                        £ 95.90
+                    </p>
+                </div>
+                <div class="Image-9">
+                    <img src="Images/9.jpg ">
+                    <p>Wrap Back Dress</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-wide "></i>
+                    </div>
+                    <p>
+                        £ 55.90
+                    </p>
+                </div>
+                <div class="Image-10">
+                    <img src="Images/10.jpg ">
+                    <p>Leather Shop Bag</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-wide "></i>
+                    </div>
+                    <p>
+                        £ 59.90
+                    </p>
+                </div>
+                <div class="Image-11">
+                    <img src="Images/11.jpg ">
+                    <p>Shearling Leather Jacket</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-wide "></i>
+                    </div>
+                    <p>
+                        £ 159.90
+                    </p>
+                </div>
+                <div class="Image-12">
+                    <img src="Images/12.jpg ">
+                    <p>Cropped Denim Jumpsuit</p>
+                    <div>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xnsuxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-solid "></i>
+                        <i class="fi-xwluxl-star-wide "></i>
+                    </div>
+                    <p>
+                        £ 89.90
+                    </p>
+                </div>
+
+                <div>
+                    <a href="# ">discover more</a>
+                </div>
+
+            </section>
+        </div>
     </main>
+    <footer>
+
+    </footer>
 
 
 </body>

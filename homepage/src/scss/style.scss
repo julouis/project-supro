@@ -1,7 +1,7 @@
 
 
 div {
-	border: px solid black;
+	border: 1px solid black;
 }
 
 @font-face {
@@ -129,7 +129,7 @@ a {
 
 
 	.text {
-		height: 150px;
+		height: 200px;
 
 		.sm-grey-text {
 			color: grey;
@@ -256,8 +256,9 @@ a {
 	.my-col {
 		height: 350px;
 		margin-inline: 80px;
-		margin-bottom: 60px;
+		margin-bottom: 80px;
 		.text {
+			height: 100px;
 			p {
 				margin-bottom: 5px;
 			}
@@ -271,4 +272,20 @@ a {
 
 .star-grey {
 	color:gray;
+}
+
+.discover-more {
+	text-align: center;
+	width: 100vw;
+	padding-top: 20px;
+	height: 10vh;
+	a {
+		margin-top: 15%;
+		font-size: small;
+		font-weight: bold;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		text-decoration-thickness: 2px;
+		font-size: 0.9em;
+	}
 }

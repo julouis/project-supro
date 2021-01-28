@@ -1,7 +1,7 @@
 
 
 div {
-	border: 1px solid black;
+	border: px solid black;
 }
 
 @font-face {
@@ -256,5 +256,19 @@ a {
 	.my-col {
 		height: 350px;
 		margin-inline: 80px;
+		margin-bottom: 60px;
+		.text {
+			p {
+				margin-bottom: 5px;
+			}
+		}
 	}
+}
+
+.fa-star {
+	color: orangered;
+}
+
+.star-grey {
+	color:gray;
 }

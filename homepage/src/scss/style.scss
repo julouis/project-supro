@@ -1,7 +1,7 @@
 
 
 div {
-	border: px solid black;
+	border: 1px solid black;
 }
 
 @font-face {
@@ -234,3 +234,27 @@ a {
 	}
 }
 
+.my-row-new-arrival {
+	position: relative;
+	height: 20vh;
+	.text {
+		position: absolute;
+		.middle-banner-title {
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.sm-grey-text {
+			color: gray;
+			margin-top: -15px;
+		}
+	}
+}
+
+.my-row-new-arrival-products {
+	display: flex;
+	justify-content: center;
+	.my-col {
+		height: 350px;
+		margin-inline: 80px;
+	}
+}

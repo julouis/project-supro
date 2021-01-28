@@ -1,5 +1,5 @@
 div {
-  border: px solid black;
+  border: 1px solid black;
 }
 
 @font-face {
@@ -233,5 +233,38 @@ a:hover {
 .my-row-new-arrival ul a {
   margin: 20px;
   color: grey;
+}
+
+.my-row-new-arrival {
+  position: relative;
+  height: 20vh;
+}
+
+.my-row-new-arrival .text {
+  position: absolute;
+}
+
+.my-row-new-arrival .text .middle-banner-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.my-row-new-arrival .text .sm-grey-text {
+  color: gray;
+  margin-top: -15px;
+}
+
+.my-row-new-arrival-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-row-new-arrival-products .my-col {
+  height: 350px;
+  margin-inline: 80px;
 }
 /*# sourceMappingURL=style.css.map */

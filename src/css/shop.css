@@ -14,8 +14,8 @@ body {
   float: right;
   -ms-grid-columns: 450px 450px 450px;
       grid-template-columns: 450px 450px 450px;
-  -ms-grid-rows: 450px 450px 450px 450px;
-      grid-template-rows: 450px 450px 450px 450px;
+  -ms-grid-rows: 450px;
+      grid-template-rows: 450px;
 }
 
 .icons {
@@ -44,32 +44,5 @@ i [class*="fi"] {
 
 .sidebar fieldset ul li a {
   text-decoration: none;
-}
-
-.Image-1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-}
-
-.Image-2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-}
-
-.Image-3 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
 }
 /*# sourceMappingURL=shop.css.map */

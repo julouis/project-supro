@@ -1,5 +1,8 @@
 @import "variables";
 @import "header";
+@import "button";
+@import "img-anim.scss";
+@import "media";
 
 *{
     margin: 0;
@@ -20,12 +23,11 @@ body{
     overflow-x: hidden;
     
 }
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5, h6{
     font-weight: 700;
+    
 }
-ul{
-    list-style: none;
-}
+
 a{
     text-decoration: none;
     color: $grey;
@@ -33,10 +35,17 @@ a{
         color: $black;
     }
 }
+
 i{
     font-size: 2rem;
 }
+
+.container-fluid{
+    max-width: 1500px;
+    
+}
 .container{
+    max-width: 1360px;
     .row{
         border: 1px solid red;
         .col-lg-6{
@@ -46,4 +55,67 @@ i{
             border: 1px solid blue;
         }
     }
+    h2{
+        font-size: 2.5rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    
+    .product-ref{
+        color: $grey;
+    }
+
+    .checked{
+        color: $orange;
+    }
+    
+   
+    .social-icons{
+    
+        a{
+            padding: 1rem;
+            color: $black;
+            &:hover{
+                color: $grey;
+            }
+        }
+    
+    }
+}
+
+.classic-tabs{
+    a{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+.description{
+    p, li{
+        color: $grey;
+    }
+}
+.related-product{
+    h3{
+        font-weight: 700;
+    }
+    h4{
+        color: $grey;
+        font-size: 1.3rem;
+    }
+}
+
+.box{
+    border: 3px solid yellow;
+}
+footer{
+    
+    .col-lg-3{
+        border: 2px solid yellow;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+   
 }

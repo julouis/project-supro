@@ -1,3 +1,63 @@
+button:hover {
+  background-color: #999;
+  outline: none;
+  color: #222;
+  border: none;
+}
+
+.button--slide-to-right {
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+}
+
+.button--slide-to-right:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.button--slide-to-right:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  background: #999;
+}
+
+/*====================================images-animation=========================================*/
+.img-anim {
+  overflow: hidden;
+}
+
+img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  margin: 0 auto;
+}
+
+img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+@media only screen and (max-width: 576px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +79,8 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-}
-
-ul {
-  list-style: none;
 }
 
 a {
@@ -40,6 +96,14 @@ i {
   font-size: 2rem;
 }
 
+.container-fluid {
+  max-width: 1500px;
+}
+
+.container {
+  max-width: 1360px;
+}
+
 .container .row {
   border: 1px solid red;
 }
@@ -50,5 +114,61 @@ i {
 
 .container .row .col-12 {
   border: 1px solid blue;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+}
+
+.container h4 {
+  font-size: 2rem;
+}
+
+.container .product-ref {
+  color: #999;
+}
+
+.container .checked {
+  color: #f68773;
+}
+
+.container .social-icons a {
+  padding: 1rem;
+  color: #222;
+}
+
+.container .social-icons a:hover {
+  color: #999;
+}
+
+.classic-tabs a {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.description p, .description li {
+  color: #999;
+}
+
+.related-product h3 {
+  font-weight: 700;
+}
+
+.related-product h4 {
+  color: #999;
+  font-size: 1.3rem;
+}
+
+.box {
+  border: 3px solid yellow;
+}
+
+footer .col-lg-3 {
+  border: 2px solid yellow;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
 }
 /*# sourceMappingURL=style.css.map */

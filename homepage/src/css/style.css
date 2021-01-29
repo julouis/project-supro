@@ -84,7 +84,8 @@ header {
   right: 30%;
 }
 
-.my-col-hairband-collection-middle .text p, .my-col-hairband-collection-middle .text a {
+.my-col-hairband-collection-middle .text p,
+.my-col-hairband-collection-middle .text a {
   color: white;
 }
 
@@ -302,5 +303,37 @@ a:hover {
 .hobo-shopper-bag .text {
   margin-left: 15vw;
   margin-top: 10vh;
+}
+
+.latest-news {
+  height: 15vh;
+}
+
+.latest-news .my-col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.latest-news .my-col-1 .text {
+  height: 80px;
+}
+
+.latest-news .my-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

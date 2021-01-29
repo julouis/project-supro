@@ -1,16 +1,12 @@
-
-
 div {
 	border: 1px solid black;
 }
 
 @font-face {
 	font-family: "Roboto";
-src : url("/fonts/Roboto/Roboto-Regular.ttf"),
+	src: url("/fonts/Roboto/Roboto-Regular.ttf"),
 		url("/fonts/Roboto/Roboto-Bold.ttf");
 }
-
-
 
 body {
 	font-family: "Roboto";
@@ -82,8 +78,9 @@ header {
 	.text {
 		left: 30%;
 		right: 30%;
-		p,a {
-			color:white;
+		p,
+		a {
+			color: white;
 		}
 	}
 }
@@ -96,7 +93,6 @@ header {
 	text-align: right;
 	.text {
 		right: 10%;
-	
 	}
 }
 
@@ -127,32 +123,28 @@ a {
 	}
 }
 
+.text {
+	height: 200px;
 
-	.text {
-		height: 200px;
-
-		.sm-grey-text {
-			color: grey;
-		}
-		.big-text {
-			margin-top: -10px;
-			font-size: 2.2em;
-			font-weight: bold;
-		}
-
+	.sm-grey-text {
+		color: grey;
 	}
-
-	.sm-underline-text {
-		font-size: small;
+	.big-text {
+		margin-top: -10px;
+		font-size: 2.2em;
 		font-weight: bold;
-		text-decoration: underline;
-		text-underline-offset: 3px;
-		text-decoration-thickness: 2px;
 	}
+}
 
+.sm-underline-text {
+	font-size: small;
+	font-weight: bold;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 2px;
+}
 
 .my-col-leather-shop-bag {
-
 	background-image: url(/homepage/resources/bsl1.jpg);
 	background-size: cover;
 	background-position-x: left;
@@ -179,8 +171,6 @@ a {
 		left: 15%;
 	}
 }
-
-
 
 .my-col-glitter-decorated-shoes {
 	background-image: url(/homepage/resources/bsl3.jpg);
@@ -223,10 +213,10 @@ a {
 	margin-top: 2vw;
 	position: relative;
 	ul {
-		position:absolute;
+		position: absolute;
 		right: 0px;
-		list-style: none;	
-		a{
+		list-style: none;
+		a {
 			margin: 20px;
 			color: grey;
 		}
@@ -238,14 +228,12 @@ a {
 	height: 20vh;
 	.text {
 		position: absolute;
-
-		}
-		.sm-grey-text {
-			color: gray;
-			margin-top: -15px;
-		}
 	}
-
+	.sm-grey-text {
+		color: gray;
+		margin-top: -15px;
+	}
+}
 
 .middle-banner-title {
 	font-size: 2em;
@@ -272,7 +260,7 @@ a {
 }
 
 .star-grey {
-	color:gray;
+	color: gray;
 }
 
 .discover-more {
@@ -290,6 +278,23 @@ a {
 	background-size: 95%;
 	.text {
 		margin-left: 15vw;
-		margin-top:10vh ;
+		margin-top: 10vh;
+	}
+}
+
+.latest-news {
+	height: 15vh;
+	.my-col-1 {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+		.text {
+			height: 80px;
+		}
+	}
+	.my-col-2 {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
 	}
 }

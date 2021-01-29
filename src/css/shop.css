@@ -2,6 +2,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
 }
 
 main {
@@ -14,7 +15,12 @@ header ul {
 }
 
 header ul li a {
+  color: #222;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .slidecontainer {
@@ -53,10 +59,6 @@ i [class*="fi"] {
   color: #f68773;
 }
 
-a {
-  font-family: "Roboto";
-}
-
 .top {
   display: inline-block;
   position: relative;
@@ -79,8 +81,15 @@ a {
   display: block;
   float: left;
   text-decoration: none;
+  color: #999;
   text-align: center;
   padding-right: 5px;
+  font-size: 1rem;
+}
+
+.links {
+  position: relative;
+  top: -10px;
 }
 
 .filter {
@@ -122,6 +131,8 @@ a {
 .sidebar {
   width: 220px;
   float: left;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .sidebar img {
@@ -132,12 +143,49 @@ a {
   border: none;
 }
 
-.sidebar fieldset ul li {
+.sidebar fieldset .prod ul li {
   list-style-type: none;
 }
 
-.sidebar fieldset ul li a {
+.sidebar fieldset .prod ul li a {
   text-decoration: none;
+}
+
+.prod a:active {
+  color: black;
+}
+
+.prod a:link {
+  color: #999;
+}
+
+.prod a:visited {
+  color: gray;
+}
+
+.prod a:hover {
+  color: #222;
+}
+
+.sort a:active {
+  color: black;
+}
+
+.sort a:link {
+  color: #999;
+}
+
+.sort a:visited {
+  color: gray;
+}
+
+.sort a:hover {
+  color: #222;
+}
+
+.price li {
+  list-style-type: none;
+  color: #999;
 }
 
 .more {
@@ -150,22 +198,5 @@ nav .prod ul li {
 
 nav .prod ul li a {
   text-decoration: none;
-  color: #999;
-}
-
-a:active {
-  color: black;
-}
-
-a:link {
-  color: #999;
-}
-
-a:visited {
-  color: gray;
-}
-
-a:hover {
-  color: #222;
 }
 /*# sourceMappingURL=shop.css.map */

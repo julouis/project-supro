@@ -1,5 +1,5 @@
 div {
-	border: 1px solid black;
+	border: 0px solid black;
 }
 
 @font-face {
@@ -290,6 +290,7 @@ a {
 		align-items: flex-end;
 		justify-content: flex-start;
 		.text {
+			margin-left: -15px;
 			height: 80px;
 		}
 	}
@@ -297,6 +298,10 @@ a {
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-end;
+		.text {
+			margin-right: -15px;
+			height: 30px;
+		}
 	}
 }
 

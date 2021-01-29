@@ -1,7 +1,7 @@
 @import "variables";
 @import "header";
 @import "button";
-@import "img-anim.scss";
+@import "img-anim";
 @import "media";
 
 *{
@@ -109,7 +109,7 @@ i{
     border: 3px solid yellow;
 }
 footer{
-    
+
     .col-lg-3{
         border: 2px solid yellow;
     }

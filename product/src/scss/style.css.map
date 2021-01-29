@@ -6,7 +6,7 @@
         "_variables.scss",
         "_header.scss",
         "_button.scss",
-        "img-anim.scss",
+        "_img-anim.scss",
         "_media.scss"
     ],
     "names": [],

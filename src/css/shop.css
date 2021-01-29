@@ -9,6 +9,14 @@ main {
   margin: auto;
 }
 
+header ul {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
 .slidecontainer {
   width: 100%;
 }
@@ -98,6 +106,17 @@ a {
   display: block;
   text-decoration: none;
   text-align: center;
+  padding-right: 20px;
+}
+
+.sort {
+  position: relative;
+  left: 180px;
+}
+
+.filter-icons {
+  position: relative;
+  left: 430px;
 }
 
 .sidebar {
@@ -131,5 +150,22 @@ nav .prod ul li {
 
 nav .prod ul li a {
   text-decoration: none;
+  color: #999;
+}
+
+a:active {
+  color: black;
+}
+
+a:link {
+  color: #999;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: #222;
 }
 /*# sourceMappingURL=shop.css.map */

@@ -10,6 +10,17 @@
                                     margin: auto;
                                 }
                                 
+                                header {
+                                    ul {
+                                        list-style-type: none;
+                                        li {
+                                            a {
+                                                text-decoration: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                
                                 .slidecontainer {
                                     width: 100%;
                                     .slider {
@@ -87,7 +98,18 @@
                                         display: block;
                                         text-decoration: none;
                                         text-align: center;
+                                        padding-right: 20px;
                                     }
+                                }
+                                
+                                .sort {
+                                    position: relative;
+                                    left: 180px;
+                                }
+                                
+                                .filter-icons {
+                                    position: relative;
+                                    left: 430px;
                                 }
                                 
                                 .sidebar {
@@ -96,7 +118,6 @@
                                     img {
                                         width: 85px;
                                     }
-                                    ;
                                     fieldset {
                                         border: none;
                                         ul {
@@ -121,8 +142,25 @@
                                                 list-style-type: none;
                                                 a {
                                                     text-decoration: none;
+                                                    color: $grey;
                                                 }
                                             }
                                         }
                                     }
+                                }
+                                
+                                a:active {
+                                    color: black;
+                                }
+                                
+                                a:link {
+                                    color: $grey;
+                                }
+                                
+                                a:visited {
+                                    color: gray;
+                                }
+                                
+                                a:hover {
+                                    color: $black;
                                 }

@@ -297,7 +297,8 @@ a:hover {
   background-image: url(/homepage/resources/deals_image.jpg);
   background-position-y: bottom;
   background-position-x: right;
-  background-size: 95%;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .hobo-shopper-bag .text {
@@ -335,5 +336,49 @@ a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.latest-news-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 450px;
+}
+
+.latest-news-products .my-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.latest-news-products .my-col .text {
+  height: 120px;
+}
+
+.latest-news-products .img-1 {
+  background-image: url(/homepage/resources/blog1.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: left;
+}
+
+.latest-news-products .img-2 {
+  background-image: url(/homepage/resources/blog2.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+}
+
+.latest-news-products .img-3 {
+  background-image: url(/homepage/resources/blog3.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: right;
 }
 /*# sourceMappingURL=style.css.map */

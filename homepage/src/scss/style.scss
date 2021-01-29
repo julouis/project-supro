@@ -275,7 +275,8 @@ a {
 	background-image: url(/homepage/resources/deals_image.jpg);
 	background-position-y: bottom;
 	background-position-x: right;
-	background-size: 95%;
+	background-repeat: no-repeat;
+	background-size: 100%;
 	.text {
 		margin-left: 15vw;
 		margin-top: 10vh;
@@ -296,5 +297,36 @@ a {
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-end;
+	}
+}
+
+.latest-news-products {
+	display: flex;
+	justify-content:center;
+	height: 450px;
+	.my-col {
+		display: flex;
+		align-items: flex-end;
+		.text {
+			height: 120px;
+		}
+	}
+	.img-1 {
+		background-image: url(/homepage/resources/blog1.jpg);
+		background-repeat: no-repeat;
+		background-size:auto;
+		background-position-x:left;
+	}
+	.img-2 {
+		background-image: url(/homepage/resources/blog2.jpg);
+		background-repeat: no-repeat;
+		background-size:auto;
+		background-position-x:center;
+	}
+	.img-3 {
+		background-image: url(/homepage/resources/blog3.jpg);
+		background-repeat: no-repeat;
+		background-size:auto;
+		background-position-x:right;
 	}
 }

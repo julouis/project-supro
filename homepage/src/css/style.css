@@ -1,5 +1,5 @@
 div {
-  border: 0px solid black;
+  border: 1px solid black;
 }
 
 @font-face {
@@ -11,6 +11,9 @@ body {
   font-family: "Roboto";
   overflow-x: hidden;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 span {
@@ -21,6 +24,7 @@ span {
 header {
   background-image: url(/homepage/resources/sl3-1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -150px;
   min-height: 70vh;
@@ -133,7 +137,7 @@ a:hover {
 }
 
 .text {
-  height: 200px;
+  height: 150px;
 }
 
 .text .sm-grey-text {
@@ -220,7 +224,6 @@ a:hover {
 }
 
 .my-row-new-arrival {
-  margin-top: 2vw;
   position: relative;
 }
 
@@ -231,7 +234,7 @@ a:hover {
 }
 
 .my-row-new-arrival ul a {
-  margin: 20px;
+  margin: 1vw;
   color: grey;
 }
 
@@ -254,19 +257,20 @@ a:hover {
   font-weight: bold;
 }
 
-.my-row-new-arrival-products {
+.my-row-new-arrival-products .my-col {
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.my-row-new-arrival-products .my-col {
-  height: 350px;
-  margin-inline: 80px;
-  margin-bottom: 80px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
 }
 
 .my-row-new-arrival-products .my-col .text {
@@ -275,6 +279,30 @@ a:hover {
 
 .my-row-new-arrival-products .my-col .text p {
   margin-bottom: 5px;
+}
+
+.my-row-new-arrival-products .img1 {
+  background-image: url(/homepage/resources/prd_04_1_1.jpg);
+}
+
+.my-row-new-arrival-products .img2 {
+  background-image: url(/homepage/resources/prd_05_1_2.jpg);
+}
+
+.my-row-new-arrival-products .img3 {
+  background-image: url(/homepage/resources/prd_06_1_2.jpg);
+}
+
+.my-row-new-arrival-products .img4 {
+  background-image: url(/homepage/resources/prd_07_1_2.jpg);
+}
+
+.my-row-new-arrival-products .img5 {
+  background-image: url(/homepage/resources/prd_08_1_6.jpg);
+}
+
+.my-row-new-arrival-products .img6 {
+  background-image: url(/homepage/resources/prd_09_1_1_5.jpg);
 }
 
 .fa-star {
@@ -386,5 +414,41 @@ a:hover {
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: right;
+}
+
+.keep-connected .my-col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.keep-connected .my-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.keep-connected .my-col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

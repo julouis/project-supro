@@ -1,5 +1,5 @@
 div {
-	border: 0px solid black;
+	border: 1px solid black;
 }
 
 @font-face {
@@ -8,10 +8,12 @@ div {
 		url("/fonts/Roboto/Roboto-Bold.ttf");
 }
 
+
 body {
 	font-family: "Roboto";
 	overflow-x: hidden;
 	background-color: white;
+	display: flex;
 }
 
 span {
@@ -22,6 +24,7 @@ span {
 header {
 	background-image: url(/homepage/resources/sl3-1.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: -150px;
 	min-height: 70vh;
@@ -124,7 +127,7 @@ a {
 }
 
 .text {
-	height: 200px;
+	height: 150px;
 
 	.sm-grey-text {
 		color: grey;
@@ -210,17 +213,17 @@ a {
 }
 
 .my-row-new-arrival {
-	margin-top: 2vw;
 	position: relative;
 	ul {
 		position: absolute;
 		right: 0px;
 		list-style: none;
 		a {
-			margin: 20px;
+			margin: 1vw;
 			color: grey;
 		}
 	}
+
 }
 
 .my-row-new-arrival {
@@ -240,18 +243,39 @@ a {
 	font-weight: bold;
 }
 .my-row-new-arrival-products {
-	display: flex;
-	justify-content: center;
 	.my-col {
-		height: 350px;
-		margin-inline: 80px;
-		margin-bottom: 80px;
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: top;
 		.text {
 			height: 100px;
 			p {
 				margin-bottom: 5px;
 			}
 		}
+	}
+	.img1 {
+		background-image: url(/homepage/resources/prd_04_1_1.jpg);
+
+	}
+	.img2 {
+		background-image: url(/homepage/resources/prd_05_1_2.jpg);
+	}
+	.img3 {
+		background-image: url(/homepage/resources/prd_06_1_2.jpg);
+	}
+	.img4 {
+		background-image: url(/homepage/resources/prd_07_1_2.jpg);
+	}
+	.img5 {
+		background-image: url(/homepage/resources/prd_08_1_6.jpg);
+	}
+	.img6 {
+		background-image: url(/homepage/resources/prd_09_1_1_5.jpg);
 	}
 }
 
@@ -333,5 +357,24 @@ a {
 		background-repeat: no-repeat;
 		background-size:auto;
 		background-position-x:right;
+	}
+}
+
+.keep-connected {
+
+	.my-col-1 {
+		display: flex;
+		align-items: center;
+		justify-content: baseline;
+	}
+	.my-col-2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.my-col-3 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 	}
 }

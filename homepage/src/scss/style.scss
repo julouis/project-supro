@@ -8,10 +8,11 @@ div {
 		url("/fonts/Roboto/Roboto-Bold.ttf");
 }
 
-
 body {
+	display: flex;
+	justify-content: center;
 	font-family: "Roboto";
-	overflow-x: hidden;
+	overflow-x: auto;
 	background-color: white;
 	display: flex;
 }
@@ -21,7 +22,7 @@ span {
 	margin-top: -10px;
 }
 
-header {
+.my-row-header {
 	background-image: url(/homepage/resources/sl3-1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -30,8 +31,8 @@ header {
 	min-height: 70vh;
 }
 
-@media (max-width: 1450px) and (min-width: 500px) {
-	header {
+@media (max-width: 1500px) {
+	.my-row-header {
 		background-position-y: bottom;
 	}
 }
@@ -39,11 +40,11 @@ header {
 .my-col-header {
 	position: relative;
 	min-height: 70vh;
-
+	display: flex;
+	justify-content:center;
+	align-items: center;
 	.text {
 		position: absolute;
-		left: 0%;
-		right: 0%;
 		color: rgb(255, 255, 255);
 		font-size: 2em;
 		text-align: center;
@@ -69,6 +70,7 @@ header {
 	text-align: right;
 	.text {
 		left: 10%;
+		text-align: left;
 	}
 }
 
@@ -222,7 +224,6 @@ a {
 			color: grey;
 		}
 	}
-
 }
 
 .my-row-new-arrival {
@@ -259,7 +260,6 @@ a {
 	}
 	.img1 {
 		background-image: url(/homepage/resources/prd_04_1_1.jpg);
-
 	}
 	.img2 {
 		background-image: url(/homepage/resources/prd_05_1_2.jpg);
@@ -288,7 +288,7 @@ a {
 
 .discover-more {
 	text-align: center;
-	width: 100vw;
+	width: 90vw;
 	padding-top: 20px;
 	height: 10vh;
 }
@@ -299,7 +299,7 @@ a {
 	background-position-y: bottom;
 	background-position-x: right;
 	background-repeat: no-repeat;
-	background-size:cover;
+	background-size: cover;
 	.text {
 		margin-left: 15vw;
 		margin-top: 10vh;
@@ -330,12 +330,12 @@ a {
 
 .latest-news-products {
 	display: flex;
-	justify-content:center;
-	min-height: 50vh;
+	justify-content: center;
 
 	.my-col {
 		display: flex;
 		align-items: flex-end;
+		min-height: 60vh;
 		.text {
 			height: 120px;
 		}
@@ -343,25 +343,24 @@ a {
 	.img-1 {
 		background-image: url(/homepage/resources/blog1.jpg);
 		background-repeat: no-repeat;
-		background-size:auto;
-		background-position-x:left;
+		background-position-x: center;
+		background-size: auto;
 	}
 	.img-2 {
 		background-image: url(/homepage/resources/blog2.jpg);
 		background-repeat: no-repeat;
-		background-size:auto;
-		background-position-x:center;
+		background-size: auto;
+		background-position-x: center;
 	}
 	.img-3 {
 		background-image: url(/homepage/resources/blog3.jpg);
 		background-repeat: no-repeat;
-		background-size:auto;
-		background-position-x:right;
+		background-size: auto;
+		background-position-x: right;
 	}
 }
 
 .keep-connected {
-
 	.my-col-1 {
 		display: flex;
 		align-items: center;
@@ -403,5 +402,20 @@ a {
 	.col6 {
 		background-image: url(/homepage/resources/blog8.jpg);
 	}
+}
 
+@media (max-width: 767px) {
+	.my-col-header {
+		.text {
+			font-size: 1em;
+		}
+	}
+
+	.tiles-top-sellers {
+		.big-tile {
+			.text {
+				
+			}
+		}
+	}
 }

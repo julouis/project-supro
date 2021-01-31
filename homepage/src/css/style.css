@@ -8,11 +8,15 @@ div {
 }
 
 body {
-  font-family: "Roboto";
-  overflow-x: hidden;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto";
+  overflow-x: auto;
+  background-color: white;
   display: flex;
 }
 
@@ -21,7 +25,7 @@ span {
   margin-top: -10px;
 }
 
-header {
+.my-row-header {
   background-image: url(/homepage/resources/sl3-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,8 +34,8 @@ header {
   min-height: 70vh;
 }
 
-@media (max-width: 1450px) and (min-width: 500px) {
-  header {
+@media (max-width: 1500px) {
+  .my-row-header {
     background-position-y: bottom;
   }
 }
@@ -39,12 +43,19 @@ header {
 .my-col-header {
   position: relative;
   min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .my-col-header .text {
   position: absolute;
-  left: 0%;
-  right: 0%;
   color: white;
   font-size: 2em;
   text-align: center;
@@ -73,6 +84,7 @@ header {
 
 .my-col-hairband-collection-left .text {
   left: 10%;
+  text-align: left;
 }
 
 .my-col-hairband-collection-middle {
@@ -314,7 +326,7 @@ a:hover {
 
 .discover-more {
   text-align: center;
-  width: 100vw;
+  width: 90vw;
   padding-top: 20px;
   height: 10vh;
 }
@@ -378,7 +390,6 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 50vh;
 }
 
 .latest-news-products .my-col {
@@ -388,6 +399,7 @@ a:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  min-height: 60vh;
 }
 
 .latest-news-products .my-col .text {
@@ -397,8 +409,8 @@ a:hover {
 .latest-news-products .img-1 {
   background-image: url(/homepage/resources/blog1.jpg);
   background-repeat: no-repeat;
+  background-position-x: center;
   background-size: auto;
-  background-position-x: left;
 }
 
 .latest-news-products .img-2 {
@@ -482,5 +494,11 @@ a:hover {
 
 .allpictures .col6 {
   background-image: url(/homepage/resources/blog8.jpg);
+}
+
+@media (max-width: 767px) {
+  .my-col-header .text {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

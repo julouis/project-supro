@@ -149,10 +149,9 @@ a {
 
 .my-col-leather-shop-bag {
 	background-image: url(/homepage/resources/bsl1.jpg);
-	background-size: cover;
 	background-position-x: left;
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size: 350px;
 	min-height: 500px;
 	text-align: right;
 	.text {
@@ -194,7 +193,7 @@ a {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-x: right;
-	background-size: 70%;
+	background-size: 350px;
 	min-height: 500px;
 	text-align: right;
 	.text {
@@ -300,7 +299,7 @@ a {
 	background-position-y: bottom;
 	background-position-x: right;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size:cover;
 	.text {
 		margin-left: 15vw;
 		margin-top: 10vh;
@@ -332,7 +331,8 @@ a {
 .latest-news-products {
 	display: flex;
 	justify-content:center;
-	height: 450px;
+	min-height: 50vh;
+
 	.my-col {
 		display: flex;
 		align-items: flex-end;
@@ -377,4 +377,31 @@ a {
 		align-items: center;
 		justify-content: flex-end;
 	}
+}
+
+.allpictures {
+	height: 250px;
+	.my-col {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.col1 {
+		background-image: url(/homepage/resources/blog1.jpg);
+	}
+	.col2 {
+		background-image: url(/homepage/resources/blog2.jpg);
+	}
+	.col3 {
+		background-image: url(/homepage/resources/blog3.jpg);
+	}
+	.col4 {
+		background-image: url(/homepage/resources/blog4_1.jpg);
+	}
+	.col5 {
+		background-image: url(/homepage/resources/blog6_1.jpg);
+	}
+	.col6 {
+		background-image: url(/homepage/resources/blog8.jpg);
+	}
+
 }

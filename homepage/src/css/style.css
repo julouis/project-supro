@@ -160,10 +160,9 @@ a:hover {
 
 .my-col-leather-shop-bag {
   background-image: url(/homepage/resources/bsl1.jpg);
-  background-size: cover;
   background-position-x: left;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 350px;
   min-height: 500px;
   text-align: right;
 }
@@ -208,7 +207,7 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: right;
-  background-size: 70%;
+  background-size: 350px;
   min-height: 500px;
   text-align: right;
 }
@@ -326,7 +325,7 @@ a:hover {
   background-position-y: bottom;
   background-position-x: right;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .hobo-shopper-bag .text {
@@ -379,7 +378,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 450px;
+  min-height: 50vh;
 }
 
 .latest-news-products .my-col {
@@ -450,5 +449,38 @@ a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.allpictures {
+  height: 250px;
+}
+
+.allpictures .my-col {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.allpictures .col1 {
+  background-image: url(/homepage/resources/blog1.jpg);
+}
+
+.allpictures .col2 {
+  background-image: url(/homepage/resources/blog2.jpg);
+}
+
+.allpictures .col3 {
+  background-image: url(/homepage/resources/blog3.jpg);
+}
+
+.allpictures .col4 {
+  background-image: url(/homepage/resources/blog4_1.jpg);
+}
+
+.allpictures .col5 {
+  background-image: url(/homepage/resources/blog6_1.jpg);
+}
+
+.allpictures .col6 {
+  background-image: url(/homepage/resources/blog8.jpg);
 }
 /*# sourceMappingURL=style.css.map */

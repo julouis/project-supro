@@ -1,7 +1,12 @@
 $font: "Roboto";
 $black: #222;
+$blue:#70849D;
+$gold:#CC9900;
+$nude:#CFA491;
+$orange :#CC6601;
+$red: #9A0201;
+$star: #f68773;
 $grey: #999;
-$orange: #f68773;
 $banner-top: #f2ede9;
 @mixin fontface($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
     $src: null;

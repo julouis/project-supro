@@ -145,10 +145,16 @@ i [class*="fi"] {
 
 .sidebar fieldset .prod ul li {
   list-style-type: none;
+  padding-bottom: 20px;
 }
 
 .sidebar fieldset .prod ul li a {
   text-decoration: none;
+}
+
+.prod {
+  position: relative;
+  margin-left: -39px;
 }
 
 .prod a:active {
@@ -183,20 +189,79 @@ i [class*="fi"] {
   color: #222;
 }
 
+.price {
+  position: relative;
+  margin-left: -39px;
+}
+
 .price li {
   list-style-type: none;
   color: #999;
+  padding-bottom: 20px;
 }
 
 .more {
   position: relative;
 }
 
-nav .prod ul li {
-  list-style-type: none;
+.colors {
+  padding-bottom: 30px;
 }
 
-nav .prod ul li a {
-  text-decoration: none;
+.colors div {
+  float: left;
+}
+
+.colors ul li {
+  list-style-type: none;
+  color: #999;
+  padding-bottom: 60px;
+}
+
+.inline-colors {
+  position: relative;
+  margin-left: -39px;
+}
+
+.black {
+  width: 20px;
+  height: 20px;
+  background-color: #222;
+  border-radius: 100px;
+}
+
+.blue {
+  width: 20px;
+  height: 20px;
+  background-color: #70849D;
+  border-radius: 100px;
+}
+
+.gold {
+  width: 20px;
+  height: 20px;
+  background-color: #CC9900;
+  border-radius: 100px;
+}
+
+.orange {
+  width: 20px;
+  height: 20px;
+  background-color: #CC6601;
+  border-radius: 100px;
+}
+
+.nude {
+  width: 20px;
+  height: 20px;
+  background-color: #CFA491;
+  border-radius: 100px;
+}
+
+.red {
+  width: 20px;
+  height: 20px;
+  background-color: #9A0201;
+  border-radius: 100px;
 }
 /*# sourceMappingURL=shop.css.map */

@@ -27,33 +27,6 @@
                                                                 font-size: 3rem;
                                                             }
                                                             
-                                                            header {
-                                                                //     display: flex;
-                                                                //     margin: 0 auto;
-                                                                //     padding: 1rem;
-                                                                //     justify-content: space-between;
-                                                                //     align-items: center;
-                                                                //      max-width: 1600px;
-                                                                //      height: 10vh;
-                                                                //     .nav-list{
-                                                                //         display: flex;
-                                                                //         justify-content: space-between;
-                                                                //         align-items: center;
-                                                                //         margin: 0 auto;
-                                                                //         .nav-item{
-                                                                //             padding:.5rem;
-                                                                //         }
-                                                                //         a{
-                                                                //             color: $black;
-                                                                //             font-size: 1rem;
-                                                                //         }
-                                                                //     }
-                                                                //     i{
-                                                                //         padding: .3rem;
-                                                                //         color: $grey;
-                                                                //         font-size: 1.5rem;
-                                                            }
-                                                            
                                                             .slidecontainer {
                                                                 width: 100%;
                                                                 .slider {
@@ -81,7 +54,7 @@
                                                             }
                                                             
                                                             i [class*="fi"] {
-                                                                color: $orange;
+                                                                color: $star;
                                                             }
                                                             
                                                             .top {
@@ -162,6 +135,7 @@
                                                                         ul {
                                                                             li {
                                                                                 list-style-type: none;
+                                                                                padding-bottom: 20px;
                                                                                 a {
                                                                                     text-decoration: none;
                                                                                 }
@@ -172,6 +146,8 @@
                                                             }
                                                             
                                                             .prod {
+                                                                position: relative;
+                                                                margin-left: -39px;
                                                                 a:active {
                                                                     color: black;
                                                                 }
@@ -202,9 +178,12 @@
                                                             }
                                                             
                                                             .price {
+                                                                position: relative;
+                                                                margin-left: -39px;
                                                                 li {
                                                                     list-style-type: none;
                                                                     color: $grey;
+                                                                    padding-bottom: 20px;
                                                                 }
                                                             }
                                                             
@@ -212,15 +191,64 @@
                                                                 position: relative;
                                                             }
                                                             
-                                                            nav {
-                                                                .prod {
-                                                                    ul {
-                                                                        li {
-                                                                            list-style-type: none;
-                                                                            a {
-                                                                                text-decoration: none;
-                                                                            }
-                                                                        }
+                                                            .colors {
+                                                                padding-bottom: 30px;
+                                                                ;
+                                                                div {
+                                                                    float: left;
+                                                                }
+                                                                ul {
+                                                                    li {
+                                                                        list-style-type: none;
+                                                                        color: $grey;
+                                                                        padding-bottom: 60px;
                                                                     }
                                                                 }
+                                                            }
+                                                            
+                                                            .inline-colors {
+                                                                position: relative;
+                                                                margin-left: -39px;
+                                                            }
+                                                            
+                                                            .black {
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                background-color: $black;
+                                                                border-radius: 100px;
+                                                            }
+                                                            
+                                                            .blue {
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                background-color: $blue;
+                                                                border-radius: 100px;
+                                                            }
+                                                            
+                                                            .gold {
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                background-color: $gold;
+                                                                border-radius: 100px;
+                                                            }
+                                                            
+                                                            .orange {
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                background-color: $orange;
+                                                                border-radius: 100px;
+                                                            }
+                                                            
+                                                            .nude {
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                background-color: $nude;
+                                                                border-radius: 100px;
+                                                            }
+                                                            
+                                                            .red {
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                background-color: $red;
+                                                                border-radius: 100px;
                                                             }

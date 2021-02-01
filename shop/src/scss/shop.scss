@@ -26,6 +26,7 @@
                                                             h1 {
                                                                 font-size: 3rem;
                                                             }
+                                                            /*slider*/
                                                             
                                                             .slidecontainer {
                                                                 width: 100%;
@@ -41,6 +42,7 @@
                                                                     transition: opacity .2s;
                                                                 }
                                                             }
+                                                            /* grid images */
                                                             
                                                             .container {
                                                                 display: grid;
@@ -56,6 +58,7 @@
                                                             i [class*="fi"] {
                                                                 color: $star;
                                                             }
+                                                            /* top menu */
                                                             
                                                             .top {
                                                                 display: inline-block;
@@ -120,12 +123,18 @@
                                                                 position: relative;
                                                                 left: 430px;
                                                             }
+                                                            /* sidebar */
                                                             
                                                             .sidebar {
                                                                 width: 220px;
                                                                 float: left;
                                                                 margin-left: 50px;
                                                                 margin-top: 50px;
+                                                                font-size: 1rem;
+                                                                .icons {
+                                                                    width: 13px;
+                                                                    padding-right: 0.3rem;
+                                                                }
                                                                 img {
                                                                     width: 85px;
                                                                 }
@@ -197,6 +206,11 @@
                                                                 div {
                                                                     float: left;
                                                                 }
+                                                                .inline-colors {
+                                                                    li {
+                                                                        color: $black;
+                                                                    }
+                                                                }
                                                                 ul {
                                                                     li {
                                                                         list-style-type: none;
@@ -209,6 +223,34 @@
                                                             .inline-colors {
                                                                 position: relative;
                                                                 margin-left: -39px;
+                                                            }
+                                                            
+                                                            .align-colors {
+                                                                margin-left: 20px;
+                                                            }
+                                                            
+                                                            .check-black {
+                                                                margin-left: 89px;
+                                                            }
+                                                            
+                                                            .check-blue {
+                                                                margin-left: 97px;
+                                                            }
+                                                            
+                                                            .check-gold {
+                                                                margin-left: 95px;
+                                                            }
+                                                            
+                                                            .check-nude {
+                                                                margin-left: 90px;
+                                                            }
+                                                            
+                                                            .check-orange {
+                                                                margin-left: 77px;
+                                                            }
+                                                            
+                                                            .check-red {
+                                                                margin-left: 101px;
                                                             }
                                                             
                                                             .black {
@@ -251,4 +293,14 @@
                                                                 height: 20px;
                                                                 background-color: $red;
                                                                 border-radius: 100px;
+                                                            }
+                                                            
+                                                            .more {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                a {
+                                                                    color: $black;
+                                                                    letter-spacing: 1px;
+                                                                    font-weight: bold;
+                                                                }
                                                             }

@@ -23,6 +23,7 @@ h1 {
   font-size: 3rem;
 }
 
+/*slider*/
 .slidecontainer {
   width: 100%;
 }
@@ -41,6 +42,7 @@ h1 {
   transition: opacity .2s;
 }
 
+/* grid images */
 .container {
   display: -ms-grid;
   display: grid;
@@ -59,6 +61,7 @@ i [class*="fi"] {
   color: #f68773;
 }
 
+/* top menu */
 .top {
   display: inline-block;
   position: relative;
@@ -128,11 +131,18 @@ i [class*="fi"] {
   left: 430px;
 }
 
+/* sidebar */
 .sidebar {
   width: 220px;
   float: left;
   margin-left: 50px;
   margin-top: 50px;
+  font-size: 1rem;
+}
+
+.sidebar .icons {
+  width: 13px;
+  padding-right: 0.3rem;
 }
 
 .sidebar img {
@@ -212,6 +222,10 @@ i [class*="fi"] {
   float: left;
 }
 
+.colors .inline-colors li {
+  color: #222;
+}
+
 .colors ul li {
   list-style-type: none;
   color: #999;
@@ -221,6 +235,34 @@ i [class*="fi"] {
 .inline-colors {
   position: relative;
   margin-left: -39px;
+}
+
+.align-colors {
+  margin-left: 20px;
+}
+
+.check-black {
+  margin-left: 89px;
+}
+
+.check-blue {
+  margin-left: 97px;
+}
+
+.check-gold {
+  margin-left: 95px;
+}
+
+.check-nude {
+  margin-left: 90px;
+}
+
+.check-orange {
+  margin-left: 77px;
+}
+
+.check-red {
+  margin-left: 101px;
 }
 
 .black {
@@ -263,5 +305,20 @@ i [class*="fi"] {
   height: 20px;
   background-color: #9A0201;
   border-radius: 100px;
+}
+
+.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.more a {
+  color: #222;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=shop.css.map */

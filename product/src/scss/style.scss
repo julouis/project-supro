@@ -46,15 +46,7 @@ i{
 }
 .container{
     max-width: 1360px;
-    .row{
-        border: 1px solid red;
-        .col-lg-6{
-            border: 1px solid green;
-        }
-        .col-12{
-            border: 1px solid blue;
-        }
-    }
+    
     h2{
         font-size: 2.5rem;
     }
@@ -105,14 +97,10 @@ i{
     }
 }
 
-.box{
-    border: 3px solid yellow;
-}
+
 footer{
 
-    .col-lg-3{
-        border: 2px solid yellow;
-    }
+    
     ul{
         list-style: none;
         padding-left: 0;

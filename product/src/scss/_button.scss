@@ -1,0 +1,29 @@
+button{
+    &:hover{
+        background-color: $grey;
+        outline:none;
+        color: $black;
+        border: none;
+    }
+}
+
+.button--slide-to-right {
+    transform: perspective(1px) translateZ(0);
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  
+    &:before {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      transition: transform .3s ease-out;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      background: $grey;
+    }
+  }

@@ -1,0 +1,101 @@
+@import "variables";
+@import "header";
+@import "button";
+@import "img-anim";
+@import "media";
+@import "footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: $font;
+    width: 100%;
+    height: 100vh;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $black;
+    overflow-x: hidden;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    
+}
+
+a{
+    text-decoration: none;
+    color: $grey;
+    &:hover{
+        color: $black;
+    }
+}
+
+i{
+    font-size: 2rem;
+}
+
+.container-fluid{
+    max-width: 1500px;
+    
+}
+.container{
+    max-width: 1360px;
+    
+    h2{
+        font-size: 2.5rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+    
+    .product-ref{
+        color: $grey;
+    }
+
+    .checked{
+        color: $orange;
+    }
+    
+   
+    .social-icons{
+    
+        a{
+            padding: 1rem;
+            color: $black;
+            &:hover{
+                color: $grey;
+            }
+        }
+    
+    }
+}
+
+.classic-tabs{
+    a{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+.description{
+    p, li{
+        color: $grey;
+    }
+}
+.related-product{
+    h3{
+        font-weight: 700;
+    }
+    h4{
+        color: $grey;
+        font-size: 1.3rem;
+    }
+}
+
+

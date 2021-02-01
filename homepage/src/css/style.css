@@ -8,6 +8,8 @@ div {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,9 +17,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Roboto";
-  overflow-x: auto;
+  overflow-x: hidden;
   background-color: white;
   display: flex;
+}
+
+header {
+  width: 100%;
+  margin: auto;
 }
 
 span {
@@ -32,6 +39,17 @@ span {
   background-position-x: center;
   background-position-y: -150px;
   min-height: 70vh;
+}
+
+.my-row-header i {
+  color: gray;
+  font-size: 1em;
+}
+
+.my-row-header i:hover {
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 1500px) {
@@ -326,7 +344,7 @@ a:hover {
 
 .discover-more {
   text-align: center;
-  width: 90vw;
+  width: 99vw;
   padding-top: 20px;
   height: 10vh;
 }
@@ -343,6 +361,47 @@ a:hover {
 .hobo-shopper-bag .text {
   margin-left: 15vw;
   margin-top: 10vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hobo-shopper-bag span {
+  display: inline;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.hobo-shopper-bag .save {
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  border-radius: 10%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline: 5px;
+}
+
+.hobo-shopper-bag .count {
+  margin-left: 0px;
+  background-color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hobo-shopper-bag .time {
+  margin-left: 0px;
+  background-color: white;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.hobo-shopper-bag .my-col {
+  height: 40px;
+  width: 5vw;
 }
 
 .latest-news {
@@ -399,11 +458,27 @@ a:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 .latest-news-products .my-col .text {
   height: 120px;
+  margin-left: -1em;
+}
+
+.latest-news-products .my-col .text .description {
+  font-weight: bold;
+}
+
+.latest-news-products .my-col .text .date {
+  font-size: small;
+  color: gray;
+}
+
+.latest-news-products .my-col .text span {
+  display: inline;
+  font-weight: bold;
+  color: orangered;
 }
 
 .latest-news-products .img-1 {
@@ -446,9 +521,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.keep-connected .my-col-2 a {
+  color: gray;
 }
 
 .keep-connected .my-col-3 {
@@ -463,7 +542,13 @@ a:hover {
           justify-content: flex-end;
 }
 
+.keep-connected .my-col-3 a {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
 .allpictures {
+  width: 100vw;
   height: 250px;
 }
 

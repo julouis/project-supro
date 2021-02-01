@@ -9,12 +9,19 @@ div {
 }
 
 body {
+	width: 100vw;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	font-family: "Roboto";
-	overflow-x: auto;
+	overflow-x: hidden;
 	background-color: white;
 	display: flex;
+}
+
+header {
+	width: 100%;
+	margin: auto;
 }
 
 span {
@@ -23,12 +30,21 @@ span {
 }
 
 .my-row-header {
+
 	background-image: url(/homepage/resources/sl3-1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: -150px;
 	min-height: 70vh;
+	i {
+		color: gray;
+		font-size:1em;
+	}
+	i:hover {
+		color: black;
+		transform: scale(1.2);
+	}
 }
 
 @media (max-width: 1500px) {
@@ -38,10 +54,11 @@ span {
 }
 
 .my-col-header {
+
 	position: relative;
 	min-height: 70vh;
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	align-items: center;
 	.text {
 		position: absolute;
@@ -54,6 +71,8 @@ span {
 	}
 }
 
+
+
 .big-tile {
 	position: relative;
 	.text {
@@ -63,6 +82,7 @@ span {
 }
 
 .my-col-hairband-collection-left {
+
 	background-image: url(/homepage/resources/banner_h1_1.jpg);
 	background-size: cover;
 	background-position-x: right;
@@ -288,7 +308,7 @@ a {
 
 .discover-more {
 	text-align: center;
-	width: 90vw;
+	width: 99vw;
 	padding-top: 20px;
 	height: 10vh;
 }
@@ -303,6 +323,38 @@ a {
 	.text {
 		margin-left: 15vw;
 		margin-top: 10vh;
+		height: fit-content;
+	}
+	span {
+		display: inline;
+		color: gray;
+		text-decoration: line-through;
+	}
+	.save {
+		border: 1px solid orangered;
+		background-color: orangered;
+		color: white;
+		font-weight: bold;
+		font-size: 0.8em;
+		border-radius: 10%;
+		width: fit-content;
+		padding-inline: 5px;
+	}
+	.count {
+		margin-left: 0px;
+		background-color: white;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	.time {
+		margin-left: 0px;
+		background-color: white;
+		color: gray;
+		font-size: 0.8em;
+	}
+	.my-col {
+		height: 40px;
+		width: 5vw;
 	}
 }
 
@@ -324,6 +376,7 @@ a {
 		.text {
 			margin-right: -15px;
 			height: 30px;
+
 		}
 	}
 }
@@ -335,9 +388,22 @@ a {
 	.my-col {
 		display: flex;
 		align-items: flex-end;
-		min-height: 60vh;
+		min-height: 50vh;
 		.text {
 			height: 120px;
+			margin-left: -1em;
+			.description {
+				font-weight: bold;
+			}
+			.date {
+				font-size: small;
+				color: gray;
+			}
+			span {
+				display: inline;
+				font-weight: bold;
+				color: orangered;
+			}
 		}
 	}
 	.img-1 {
@@ -358,6 +424,7 @@ a {
 		background-size: auto;
 		background-position-x: right;
 	}
+
 }
 
 .keep-connected {
@@ -369,16 +436,24 @@ a {
 	.my-col-2 {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: left;
+		a {
+			color: gray;
+		}
 	}
 	.my-col-3 {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		a {
+			font-size: 0.9em;
+			font-weight: bold;
+		}
 	}
 }
 
 .allpictures {
+	width: 100vw;
 	height: 250px;
 	.my-col {
 		background-repeat: no-repeat;
@@ -414,7 +489,6 @@ a {
 	.tiles-top-sellers {
 		.big-tile {
 			.text {
-				
 			}
 		}
 	}

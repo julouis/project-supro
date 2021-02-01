@@ -1,0 +1,89 @@
+@import "variables";
+@import "header";
+@import "button";
+// @import "img-anim";
+@import "media";
+@import "footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: $font;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $black;
+    overflow-x: hidden;
+    
+}
+main{
+    padding: 1rem;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    
+}
+h2{
+    font-size:2.9rem;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    line-height:1.5;
+}
+
+a{
+    text-decoration: none;
+    color: $grey;
+    &:hover{
+        color: $black;
+    }
+}
+
+i{
+    font-size: 2rem;
+}
+.about{
+    h5{
+        color: red;
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.5rem;
+        color: $grey;
+        
+    }
+}
+
+.container-fluid{
+    max-width: 1500px;
+    margin: 0 auto;
+   
+    
+}
+.container{
+    max-width: 1360px;
+    
+}
+
+
+.hero{
+    margin: 5rem auto;
+   
+    h1{
+        font-size: 3.5rem;
+    }
+
+}
+
+    .filter {
+        filter: grayscale(1);
+        -webkit-filter:  grayscale(1);
+      }

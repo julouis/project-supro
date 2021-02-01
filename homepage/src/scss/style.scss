@@ -1,5 +1,9 @@
 div {
-	border: 1px solid black;
+	border: 0px solid black;
+}
+
+p {
+	border: 0px solid green;
 }
 
 @font-face {
@@ -9,7 +13,7 @@ div {
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -29,6 +33,15 @@ span {
 	margin-top: -10px;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+	&:hover {
+		text-decoration: none;
+		color: black;
+	}
+}
+
 .my-row-header {
 
 	background-image: url(/homepage/resources/sl3-1.jpg);
@@ -44,6 +57,35 @@ span {
 	i:hover {
 		color: black;
 		transform: scale(1.2);
+	}
+	.txt {
+
+		p {
+			font-size: 0.7em;
+			font-weight: bold;
+			color:grey;
+			width: 150px;
+			margin-inline: auto;
+			span {
+				font-size:1.5em;
+			}
+		}
+		p:hover {
+			color: black;
+			transform: scale(1.1);
+		}
+
+	}
+}
+
+.txt {
+	a {
+		position: relative;
+		right: 80%;
+		color: gray;
+	}
+	a:hover {
+		color:black;
 	}
 }
 
@@ -61,7 +103,6 @@ span {
 	justify-content: center;
 	align-items: center;
 	.text {
-		position: absolute;
 		color: rgb(255, 255, 255);
 		font-size: 2em;
 		text-align: center;
@@ -69,6 +110,8 @@ span {
 			color: white;
 		}
 	}
+
+	
 }
 
 
@@ -139,14 +182,7 @@ span {
 	}
 }
 
-a {
-	text-decoration: none;
-	color: black;
-	&:hover {
-		text-decoration: none;
-		color: black;
-	}
-}
+
 
 .text {
 	height: 150px;
@@ -314,6 +350,7 @@ a {
 }
 
 .hobo-shopper-bag {
+	width: 100vw;
 	height: 70vh;
 	background-image: url(/homepage/resources/deals_image.jpg);
 	background-position-y: bottom;

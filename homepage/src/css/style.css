@@ -806,5 +806,11 @@ a:hover {
   .my-row-header .txt-banner p {
     display: none;
   }
+  .nav-bar .nav-list {
+    display: none;
+  }
+  #search12 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

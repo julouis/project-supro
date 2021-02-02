@@ -119,11 +119,11 @@ button:hover {
 }
 
 /*====================================images-animation=========================================*/
-.product-infos .img-anim {
+.img-anim {
   overflow: hidden;
 }
 
-.product-infos img {
+.img-anim img {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: .3s ease-in-out;
@@ -131,7 +131,7 @@ button:hover {
   margin: 0 auto;
 }
 
-.product-infos img:hover {
+.img-anim img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }

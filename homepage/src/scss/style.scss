@@ -1,3 +1,28 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+li {
+	list-style: none;
+
+}
+
+.nav-bar {
+	margin-right: 23%;
+	
+
+}
+
+.nav-list {
+	font-weight:bold;
+	color: $grey;
+
+}
+
+.nav-list:hover {
+	color:black;
+}
+
 div {
 	border: 0px solid black;
 }

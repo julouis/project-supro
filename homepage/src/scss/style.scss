@@ -38,11 +38,11 @@ p {
 }
 
 body {
+	font-family: "Roboto";
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	font-family: "Roboto";
 	overflow-x: hidden;
 	background-color: white;
 	display: flex;
@@ -565,7 +565,14 @@ a {
 			}
 		}
 	}
-
+	.nav-bar {
+		.nav-list {
+			display: none;
+		}
+	}
+	#search12 {
+		display: none;
+	}
 }
 
 @media (min-width:0px) and (max-width: 440px) {

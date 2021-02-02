@@ -99,10 +99,21 @@ i{
 
 }
 
-    .filter {
+.filter {
         filter: grayscale(1);
         -webkit-filter:  grayscale(1);
-      }
+}
+.relative{
+    position: relative;
+    text-align: center;
+}
+.img-description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .members{
     .member-name{
         overflow:hidden;

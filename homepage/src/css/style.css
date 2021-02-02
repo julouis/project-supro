@@ -201,6 +201,7 @@ p {
 }
 
 body {
+  font-family: "Roboto";
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -209,7 +210,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Roboto";
   overflow-x: hidden;
   background-color: white;
   display: flex;

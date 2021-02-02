@@ -6,30 +6,41 @@
     <title>Shop</title>
     <link rel="stylesheet" href="src/css/Normalize.css">
     <link rel="stylesheet" href="src/css/shop.css">
+
     <script src="src/Script/script.js"></script>
+
 </head>
 
 
 <body>
     <header>
-        <img src="Images/logo_supro.svg">
+
         <nav>
             <ul>
+                <div class="logo"></div>
+                <img src="Images/logo_supro.svg">
+                </div>
+
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="collection.html">Collection</a></li>
                 <li><a href="pages.html">Pages</a></li>
-                <li><a href="blog.html">Collection</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <form class="rechercher" method="GET" action="rechercher.php">
-                    <input type="text" placeholder="Search">
-                </form>
 
-                <img class="icons" src="Images/fi-rr-search.svg">
-                <img class="icons" src="Images/fi-rr-users.svg">
-                <img class="icons" src="Images/fi-rr-heart.svg">
-                <img class="icons" src="Images/fi-rr-shopping-cart.svg">
-                <img class="icons" src="Images/fi-rr-menu-burger.svg">
+
+                <div class="header-right">
+                    <li>
+                        <form class="search" method="GET" action="rechercher.php">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </li>
+                    <img class="icons" src="Images/fi-rr-search.svg">
+                    <img class="icons" src="Images/fi-rr-users.svg">
+                    <img class="icons" src="Images/fi-rr-heart.svg">
+                    <img width="24px" src="Images/fi-rr-shopping-cart.svg">
+                    <img class="icons" src="Images/fi-rr-menu-burger.svg">
+                </div>
             </ul>
         </nav>
     </header>
@@ -199,6 +210,7 @@
 
 
         <div class="top">
+
             <div class="shop">
                 <h1>
                     Shop
@@ -230,13 +242,14 @@
             </nav>
             <nav class="sort">
 
-                <ul>
 
-                    <li><a href="#">Sort by</a></li>
-                    <ul>
+
+                <li><a href="#">Sort by</a>
+                    <ul class="under">
                         <li><a href="#">Default</a></li>
+                        <li><a href="#">Price</a></li>
                     </ul>
-                </ul>
+                </li>
             </nav>
             <nav class="filter-icons">
 
@@ -251,7 +264,7 @@
             </nav>
         </div>
 
-        <div class="container">
+        <div class="container-grid">
 
             <div class="Image-1">
                 <img src="Images/1.jpg">
@@ -298,7 +311,7 @@
             </div>
 
         </div>
-        <div class="container">
+        <div class="container-grid">
             <div class="Image-4">
                 <img src="Images/4.jpg">
                 <p>Floral Short Jumpsuit</p>
@@ -342,7 +355,7 @@
                 </p>
             </div>
         </div>
-        <div class="container">
+        <div class="container-grid">
             <div class="Image-7">
                 <img src="Images/7.jpg">
                 <p>Contrasting Design T-Shirt</p>
@@ -386,7 +399,7 @@
                 </p>
             </div>
         </div>
-        <div class="container">
+        <div class="container-grid">
             <div class="Image-10">
                 <img src="Images/10.jpg ">
                 <p>Leather Shop Bag</p>
@@ -441,6 +454,74 @@
 
     </main>
     <footer>
+        <div class="container-footer">
+
+            <div>
+                <ul>
+                    <h3 class="mb-5">HELP & INFORMATION</h3>
+
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Delivery & Returns</a></li>
+                    <li><a href="">Premier Derlivery</a></li>
+                    <li><a href="">FAQs</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 p-5">
+                <ul>
+                    <h3 class="mb-5">ABOUT SUPRO</h3>
+
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Coporate</a></li>
+                    <li><a href="">Investors</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 p-5">
+                <ul>
+                    <h3 class="mb-5">ONLINE SHOP</h3>
+
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Bags</a></li>
+                    <li><a href="">Wallets</a></li>
+                    <li><a href="">Belts</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 p-5">
+                <ul>
+                    <h3 class="mb-5">LANGUAGE</h3>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">English
+                                </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 p-5">
+                <ul>
+                    <h3 class="mb-5">CURRENCY</h3>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">USD
+                                </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
 
     </footer>
 

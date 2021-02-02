@@ -12,24 +12,32 @@
 
 <body>
     <header>
-        <img src="Images/logo_supro.svg">
+
         <nav>
+            <div class="logo"></div>
+            <img src="Images/logo_supro.svg">
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="collection.html">Collection</a></li>
                 <li><a href="pages.html">Pages</a></li>
-                <li><a href="blog.html">Collection</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <form class="rechercher" method="GET" action="rechercher.php">
-                    <input type="text" placeholder="Search">
-                </form>
 
-                <img class="icons" src="Images/fi-rr-search.svg">
-                <img class="icons" src="Images/fi-rr-users.svg">
-                <img class="icons" src="Images/fi-rr-heart.svg">
-                <img class="icons" src="Images/fi-rr-shopping-cart.svg">
-                <img class="icons" src="Images/fi-rr-menu-burger.svg">
+
+                <div class="header-right">
+                    <li>
+                        <form class="rechercher" method="GET" action="rechercher.php">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </li>
+                    <img class="icons" src="Images/fi-rr-search.svg">
+                    <img class="icons" src="Images/fi-rr-users.svg">
+                    <img class="icons" src="Images/fi-rr-heart.svg">
+                    <img width="24px" src="Images/fi-rr-shopping-cart.svg">
+                    <img class="icons" src="Images/fi-rr-menu-burger.svg">
+                </div>
             </ul>
         </nav>
     </header>
@@ -199,6 +207,7 @@
 
 
         <div class="top">
+
             <div class="shop">
                 <h1>
                     Shop

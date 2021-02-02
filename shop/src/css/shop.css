@@ -1,5 +1,6 @@
 body {
-  width: 100%;
+  width: 2560px;
+  height: auto;
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -10,13 +11,31 @@ main {
   margin: auto;
 }
 
-header ul {
-  list-style-type: none;
+header {
+  border-bottom: solid 1px #999;
 }
 
-header ul li a {
+header nav {
+  height: 70px;
+}
+
+header nav .logo {
+  padding-left: 10rem;
+}
+
+header nav li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 2rem;
+}
+
+header nav li a {
   color: #222;
   text-decoration: none;
+}
+
+header .header-right {
+  float: right;
 }
 
 h1 {
@@ -46,7 +65,6 @@ h1 {
 .container {
   display: -ms-grid;
   display: grid;
-  float: right;
   -ms-grid-columns: 450px 450px 450px;
       grid-template-columns: 450px 450px 450px;
   -ms-grid-rows: 520px;
@@ -65,8 +83,11 @@ i [class*="fi"] {
 .top {
   display: inline-block;
   position: relative;
-  margin-left: 240px;
-  top: 50px;
+  padding-bottom: 3rem;
+}
+
+.top .shop {
+  margin-bottom: 2rem;
 }
 
 .top ul {
@@ -92,15 +113,19 @@ i [class*="fi"] {
 
 .links {
   position: relative;
-  top: -10px;
+}
+
+.links ul li {
+  padding-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .filter {
   display: inline-block;
   position: relative;
+  margin-left: 23rem;
+  margin-bottom: -2.5rem;
   width: 850px;
-  margin-left: 690px;
-  margin-bottom: 60px;
 }
 
 .filter ul {
@@ -135,8 +160,8 @@ i [class*="fi"] {
 .sidebar {
   width: 220px;
   float: left;
-  margin-left: 50px;
-  margin-top: 50px;
+  margin-left: 15rem;
+  padding-right: 4rem;
   font-size: 1rem;
 }
 

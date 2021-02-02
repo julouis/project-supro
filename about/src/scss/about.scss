@@ -25,6 +25,7 @@ body{
 }
 main{
     padding: 1rem;
+    margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
@@ -50,6 +51,23 @@ a{
 i{
     font-size: 2rem;
 }
+.hero{
+    position: relative;
+    p{
+        margin-left: 10rem;
+
+        &:before{
+        content: "";
+        display: block;
+        width: 95px;
+        height: 2px;
+        background: $grey;
+        left: 15px;
+        top: 233px;
+        position: absolute;
+        }
+    }
+}
 .about{
     h5{
         color: red;
@@ -63,9 +81,7 @@ i{
 }
 
 .container-fluid{
-    max-width: 1500px;
-    margin: 0 auto;
-   
+    max-width: 1800px;
     
 }
 .container{
@@ -87,3 +103,40 @@ i{
         filter: grayscale(1);
         -webkit-filter:  grayscale(1);
       }
+.members{
+    .member-name{
+        overflow:hidden;
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            width: 260px;
+            height: 60px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+        }
+        &::after{
+            content: attr(data-name);
+            left: 9px;
+            text-align: right;
+            min-width: 12rem;
+            font-size: 1.8rem;
+            letter-spacing: .2rem;
+            font-weight: 700;
+            position: absolute;
+            bottom: 10px;
+        }
+        
+    }
+}
+.brands{
+    width: 100vw;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:768px){
+    
+}

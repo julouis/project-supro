@@ -157,6 +157,7 @@ body {
 
 main {
   padding: 1rem;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -186,6 +187,25 @@ i {
   font-size: 2rem;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero p {
+  margin-left: 10rem;
+}
+
+.hero p:before {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 2px;
+  background: #999;
+  left: 15px;
+  top: 233px;
+  position: absolute;
+}
+
 .about h5 {
   color: red;
   font-size: 1.2rem;
@@ -197,8 +217,7 @@ i {
 }
 
 .container-fluid {
-  max-width: 1500px;
-  margin: 0 auto;
+  max-width: 1800px;
 }
 
 .container {
@@ -216,5 +235,44 @@ i {
 .filter {
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
+}
+
+.members .member-name {
+  overflow: hidden;
+  position: relative;
+}
+
+.members .member-name::before {
+  content: "";
+  display: block;
+  width: 260px;
+  height: 60px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.members .member-name::after {
+  content: attr(data-name);
+  left: 9px;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1.8rem;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+}
+
+.brands {
+  width: 100vw;
+  background-color: #e6e6e6;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=about.css.map */

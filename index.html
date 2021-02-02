@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -10,7 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/homepage/src/css/style.css">
+    <link rel="stylesheet" href="homepage/src/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Framework challenge</title>
@@ -19,30 +20,55 @@
 
 <body>
     <main class="">
-        <header class="">
-            <div class="row my-row-header">
-                <div class="col-md-6 my-col">NAVBAR PLACEHOLDER</div>
-                <div class="col-md-6 my-col">NAVBAR PLACEHOLDER</div>
-                
-                <div class="col-lg-1 col-xs-1 d-flex flex-column justify-content-center align-items-center">
-                    <a href=""><i class="fab fa-twitter my-3"></i></a>
-                    <a href=""><i class="fab fa-facebook-f my-3"></i></a>
-                    <a href=""><i class="far fa-dizzy my-3"></i></a>
-                    <a href=""><i class="fab fa-pinterest my-3"></i></a>
+
+        <div class="row my-row-header">
+            <div class="col-12 my-col">        <header class="">
+                <div class="logo">
+                    <a href="index.html"><img src="/homepage/resources/logo_supro.svg" alt=""></a>
                 </div>
-                <div class="col-lg-10 col-xs-10 my-col-header">
-                    <div class="text">
-                        <p class="big-text">WINTER<span>COLLECTION</span></p>
-                        <p class="sm-underline-text"><a href="">DISCOVER MORE</a></p>
-                    </div>
+                <div class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="/shop/shop.html">Shop</a></li>
+                        <li class="nav-item"><a href="/product/product.html">Collection</a></li>
+                        <li class="nav-item"><a href="/about/about.html">About</a></li>
+                        <li class="nav-item"><a href="#">Blog</a></li>
+                        <li class="nav-item"><a href="#">Contact</a></li>
+                    </ul>
+    
                 </div>
-                <div class="txt txt-banner col-xs-1 col-lg-1 d-flex flex-column justify-content-center text-right">
-                    <p class=""><a href="">Next SS Preview <span class="my-2">Woman Shoes</span></a></p>
-                    <p class="subtxt"><a href="">Pink<span class="sneakers my-2">Sneakers</span></a></p>
-                    <p class=""><a href="">Winter<span class="my-2">Collection</span></a></p>
+                <div class="md-form md-outline mt-0 d-flex justify-content-between align-items-center">
+                    <input type="text" id="search12" class="form-control mb-0" placeholder="Search...">
+                    <a href="#!" class="btn btn-flat btn-md px-3"><i class="fas fa-search fa"></i></a>
+                </div>
+                <div class="icons-box">
+                    <i class="far fa-user"></i>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </header></div>
+
+
+            <div class="col-1 d-flex flex-column justify-content-center align-items-center">
+                <a href=""><i class="fab fa-twitter my-3"></i></a>
+                <a href=""><i class="fab fa-facebook-f my-3"></i></a>
+                <a href=""><i class="far fa-dizzy my-3"></i></a>
+                <a href=""><i class="fab fa-pinterest my-3"></i></a>
+            </div>
+            <div class="col-10 my-col-header">
+                <div class="text">
+                    <p class="big-text">WINTER<span>COLLECTION</span></p>
+                    <p class="sm-underline-text"><a href="">DISCOVER MORE</a></p>
                 </div>
             </div>
-        </header>
+            <div class="txt txt-banner col-1 d-flex flex-column justify-content-center text-right">
+                <p class=""><a href="">Next SS Preview <span class="my-2">Woman Shoes</span></a></p>
+                <p class="subtxt"><a href="">Pink<span class="sneakers my-2">Sneakers</span></a></p>
+                <p class=""><a href="">Winter<span class="my-2">Collection</span></a></p>
+            </div>
+        </div>
+
         <div class="row my-row">
             <div class="col-lg-4 col-sm-12 my-col-hairband-collection-left big-tile">
                 <div class="text">
@@ -66,14 +92,14 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-lg">
             <div class="">
-                <div class="row my-row-top-sellers ">
-                    <div class="col my-col-top-sellers ">
-                        <div class="text">
-                            <p class="top-sellers">Top Sellers</p>
-                            <p class="browse-text">Browse the huge variety of our products</p>
-                        </div>
+                <div class="row my-row-top-sellers d-flex">
+                    <div class="col-12 my-col-top-sellers text">
+
+                        <p class="top-sellers">Top Sellers</p>
+                        <p class="browse-text">Browse the huge variety of our products</p>
+
                     </div>
                 </div>
                 <div class="row my-row my-row-3 tiles-top-sellers justify-content-between">
@@ -115,14 +141,14 @@
             </div>
 
             <div class="row my-row-new-arrival ">
-                <div class="col-6 my-col d-flex justify-content-left">
+                <div class="col-lg-6 col-md-12 my-col d-flex align-items-center ">
                     <div class="text">
                         <p class="middle-banner-title">New Arrival</p>
                         <p class="sm-grey-text">Browse the huge variety of our products</p>
                     </div>
                 </div>
-                <div class="col-6 my-col">
-                    <ul class="nav">
+                <div class="col-lg-6 col-md-12 my-col d-flex justify-content-left align-items-center">
+                    <ul class="nav ">
                         <li><a href="">All Products</a></li>
                         <li><a href="">Clothing</a></li>
                         <li><a href="">Bags</a></li>
@@ -133,7 +159,7 @@
             </div>
 
             <div class="row my-row-new-arrival-products">
-                <div class="col-lg-4 col-md-6 col-sm-6 my-col img1">
+                <div class="col-lg-4  col-6  my-col img1">
                     <div class="text">
                         <p>Contrast Boot</p>
                         <p>$69.90</p>
@@ -141,7 +167,7 @@
                                 class="fas fa-star"></i><i class="fas fa-star star-grey"></i></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 my-col img2">
+                <div class="col-lg-4 col-6  my-col img2">
                     <div class="text">
                         <p>Contrasting Design Backpack</p>
                         <p>$95.90</p>
@@ -149,7 +175,7 @@
                                 class="fas fa-star"></i><i class="fas fa-star star-grey"></i></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 my-col img3">
+                <div class="col-lg-4 col-6 my-col img3">
                     <div class="text">
                         <p>Contrasting Design Bag</p>
                         <p>$65.90</p>
@@ -157,7 +183,7 @@
                                 class="fas fa-star"></i><i class="fas fa-star star-grey"></i></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 my-col img4">
+                <div class="col-lg-4 col-6 my-col img4">
                     <div class="text">
                         <p>Contrasting Design Bag</p>
                         <p>$65.90</p>
@@ -165,7 +191,7 @@
                                 class="fas fa-star"></i><i class="fas fa-star star-grey"></i></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 my-col img5">
+                <div class="col-lg-4 col-6 my-col img5">
                     <div class="text">
                         <p>Contrasting Design Bag</p>
                         <p>$65.90</p>
@@ -173,7 +199,7 @@
                                 class="fas fa-star"></i><i class="fas fa-star star-grey"></i></p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 my-col img6">
+                <div class="col-lg-4 col-6 my-col img6">
                     <div class="text">
                         <p>Contrasting Design Bag</p>
                         <p>$65.90</p>
@@ -213,15 +239,15 @@
                 </div>
             </div>
         </div>
-        <div class="container maxwidth">
+        <div class="container-lg">
             <div class="row my-row-new-arrival latest-news justify-content-center">
-                <div class="col-6 my-col-1">
+                <div class="col-md-6 col-12 my-col-1">
                     <div class="text">
                         <p class="middle-banner-title">Latest News</p>
                         <p class="sm-grey-text">Our recent articles about fashion ideas & products</p>
                     </div>
                 </div>
-                <div class="col-6 my-col-2">
+                <div class="col-md-6 col-12 my-col-2">
                     <div class="text">
                         <p class="sm-underline-text"><a href="">SEE ALL NEWS</a></p>
                     </div>
@@ -275,12 +301,12 @@
         </div>
         <div class="container-fluid">
             <div class="row my-row allpictures">
-                <div class="col-lg-2 d-md-none d-lg-block my-col col1"></div>
+                <div class="col-lg-2 d-md-none d-lg-block d-none my-col col1"></div>
                 <div class="col-lg-2 col-md-3 col my-col col2"></div>
                 <div class="col-lg-2 col-md-3 col my-col col3"></div>
                 <div class="col-lg-2 col-md-3 col my-col col4"></div>
-                <div class="col-lg-2 col-md-3  my-col col5"></div>
-                <div class="col-lg-2 d-md-none d-lg-block my-col col6"></div>
+                <div class="col-lg-2 col-md-3 col d-none  my-col col5"></div>
+                <div class="col-lg-2 d-md-none d-lg-block d-none my-col col6"></div>
             </div>
         </div>
     </main>

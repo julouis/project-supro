@@ -1,3 +1,28 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+li {
+	list-style: none;
+
+}
+
+.nav-bar {
+	margin-right: 23%;
+	
+
+}
+
+.nav-list {
+	font-weight:bold;
+	color: $grey;
+
+}
+
+.nav-list:hover {
+	color:black;
+}
+
 div {
 	border: 0px solid black;
 }
@@ -8,12 +33,12 @@ p {
 
 @font-face {
 	font-family: "Roboto";
-	src: url("/fonts/Roboto/Roboto-Regular.ttf"),
-		url("/fonts/Roboto/Roboto-Bold.ttf");
+	src: url("../../../fonts/Roboto/Roboto-Regular.ttf"),
+		url("../../../fonts/Roboto/Roboto-Bold.ttf");
 }
 
 body {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -24,7 +49,7 @@ body {
 }
 
 header {
-	width: 100%;
+	width: 100vw;
 	margin: auto;
 }
 
@@ -44,7 +69,7 @@ a {
 
 .my-row-header {
 
-	background-image: url(/homepage/resources/sl3-1.jpg);
+	background: url(../../resources/sl3-1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-x: center;
@@ -61,11 +86,12 @@ a {
 	.txt {
 
 		p {
+
 			font-size: 0.7em;
 			font-weight: bold;
 			color:grey;
 			width: 150px;
-			margin-inline: auto;
+			
 			span {
 				font-size:1.5em;
 			}
@@ -81,7 +107,7 @@ a {
 .txt {
 	a {
 		position: relative;
-		right: 80%;
+		right: 100%;
 		color: gray;
 	}
 	a:hover {
@@ -93,6 +119,7 @@ a {
 	.my-row-header {
 		background-position-y: bottom;
 	}
+
 }
 
 .my-col-header {
@@ -126,7 +153,7 @@ a {
 
 .my-col-hairband-collection-left {
 
-	background-image: url(/homepage/resources/banner_h1_1.jpg);
+	background-image: url(../../resources/banner_h1_1.jpg);
 	background-size: cover;
 	background-position-x: right;
 	min-height: 400px;
@@ -138,7 +165,7 @@ a {
 }
 
 .my-col-hairband-collection-middle {
-	background-image: url(/homepage/resources/banner_h1_2.jpg);
+	background-image: url(../../resources/banner_h1_2.jpg);
 	background-size: cover;
 	background-position-x: center;
 	min-height: 400px;
@@ -154,7 +181,7 @@ a {
 }
 
 .my-col-corduroy-culottes {
-	background-image: url(/homepage/resources/banner_h1_3.jpg);
+	background-image: url(../../resources/banner_h1_3.jpg);
 	background-size: cover;
 	background-position-x: left;
 	min-height: 400px;
@@ -165,13 +192,12 @@ a {
 }
 
 .my-row-top-sellers {
-	position: relative;
+
 	height: 20vh;
 	.text {
-		position: absolute;
-		top: 30%;
-		left: 30%;
+		margin-top: 10vh;
 		.top-sellers {
+			
 			font-size: 2em;
 			font-weight: bold;
 		}
@@ -206,7 +232,7 @@ a {
 }
 
 .my-col-leather-shop-bag {
-	background-image: url(/homepage/resources/bsl1.jpg);
+	background-image: url(../../resources/bsl1.jpg);
 	background-position-x: left;
 	background-repeat: no-repeat;
 	background-size: 350px;
@@ -220,7 +246,7 @@ a {
 }
 
 .my-col-flower-design-blouse {
-	background-image: url(/homepage/resources/bsl2.jpg);
+	background-image: url(../../resources/bsl2.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-x: right;
@@ -233,7 +259,7 @@ a {
 }
 
 .my-col-glitter-decorated-shoes {
-	background-image: url(/homepage/resources/bsl3.jpg);
+	background-image: url(../../resources/bsl3.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-x: right;
@@ -247,7 +273,7 @@ a {
 }
 
 .my-col-metallic-frame-glasses {
-	background-image: url(/homepage/resources/bsl4.jpg);
+	background-image: url(../../resources/bsl4.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-x: right;
@@ -273,11 +299,13 @@ a {
 	position: relative;
 	ul {
 		position: absolute;
-		right: 0px;
 		list-style: none;
 		a {
 			margin: 1vw;
 			color: grey;
+		}
+		a:hover {
+			color: black;
 		}
 	}
 }
@@ -286,7 +314,7 @@ a {
 	position: relative;
 	height: 20vh;
 	.text {
-		position: absolute;
+		height: fit-content;
 	}
 	.sm-grey-text {
 		color: gray;
@@ -315,22 +343,22 @@ a {
 		}
 	}
 	.img1 {
-		background-image: url(/homepage/resources/prd_04_1_1.jpg);
+		background-image: url(../../resources/prd_04_1_1.jpg);
 	}
 	.img2 {
-		background-image: url(/homepage/resources/prd_05_1_2.jpg);
+		background-image: url(../../resources/prd_05_1_2.jpg);
 	}
 	.img3 {
-		background-image: url(/homepage/resources/prd_06_1_2.jpg);
+		background-image: url(../../resources/prd_06_1_2.jpg);
 	}
 	.img4 {
-		background-image: url(/homepage/resources/prd_07_1_2.jpg);
+		background-image: url(../../resources/prd_07_1_2.jpg);
 	}
 	.img5 {
-		background-image: url(/homepage/resources/prd_08_1_6.jpg);
+		background-image: url(../../resources/prd_08_1_6.jpg);
 	}
 	.img6 {
-		background-image: url(/homepage/resources/prd_09_1_1_5.jpg);
+		background-image: url(../../resources/prd_09_1_1_5.jpg);
 	}
 }
 
@@ -344,15 +372,15 @@ a {
 
 .discover-more {
 	text-align: center;
-	width: 99vw;
+
 	padding-top: 20px;
 	height: 10vh;
 }
 
 .hobo-shopper-bag {
-	width: 100vw;
+
 	height: 70vh;
-	background-image: url(/homepage/resources/deals_image.jpg);
+	background-image: url(../../resources/deals_image.jpg);
 	background-position-y: bottom;
 	background-position-x: right;
 	background-repeat: no-repeat;
@@ -399,7 +427,7 @@ a {
 	height: 15vh;
 	.my-col-1 {
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 		justify-content: flex-start;
 		.text {
 			margin-left: -15px;
@@ -408,7 +436,7 @@ a {
 	}
 	.my-col-2 {
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 		justify-content: flex-end;
 		.text {
 			margin-right: -15px;
@@ -423,12 +451,13 @@ a {
 	justify-content: center;
 
 	.my-col {
+		min-height: 450px;
 		display: flex;
 		align-items: flex-end;
-		min-height: 50vh;
+
 		.text {
 			height: 120px;
-			margin-left: -1em;
+
 			.description {
 				font-weight: bold;
 			}
@@ -444,19 +473,19 @@ a {
 		}
 	}
 	.img-1 {
-		background-image: url(/homepage/resources/blog1.jpg);
+		background-image: url(../../resources/blog1.jpg);
 		background-repeat: no-repeat;
 		background-position-x: center;
 		background-size: auto;
 	}
 	.img-2 {
-		background-image: url(/homepage/resources/blog2.jpg);
+		background-image: url(../../resources/blog2.jpg);
 		background-repeat: no-repeat;
 		background-size: auto;
 		background-position-x: center;
 	}
 	.img-3 {
-		background-image: url(/homepage/resources/blog3.jpg);
+		background-image: url(../../resources/blog3.jpg);
 		background-repeat: no-repeat;
 		background-size: auto;
 		background-position-x: right;
@@ -490,33 +519,33 @@ a {
 }
 
 .allpictures {
-	width: 100vw;
 	height: 250px;
 	.my-col {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	.col1 {
-		background-image: url(/homepage/resources/blog1.jpg);
+		background-image: url(../../resources/blog1.jpg);
 	}
 	.col2 {
-		background-image: url(/homepage/resources/blog2.jpg);
+		background-image: url(../../resources/blog2.jpg);
 	}
 	.col3 {
-		background-image: url(/homepage/resources/blog3.jpg);
+		background-image: url(../../resources/blog3.jpg);
 	}
 	.col4 {
-		background-image: url(/homepage/resources/blog4_1.jpg);
+		background-image: url(../../resources/blog4_1.jpg);
 	}
 	.col5 {
-		background-image: url(/homepage/resources/blog6_1.jpg);
+		background-image: url(../../resources/blog6_1.jpg);
 	}
 	.col6 {
-		background-image: url(/homepage/resources/blog8.jpg);
+		background-image: url(../../resources/blog8.jpg);
 	}
 }
 
-@media (max-width: 767px) {
+@media (min-width:0px) and (max-width: 768px) {
+
 	.my-col-header {
 		.text {
 			font-size: 1em;
@@ -529,4 +558,16 @@ a {
 			}
 		}
 	}
+	.my-row-header {
+		.txt-banner {
+			p {
+				display: none;
+			}
+		}
+	}
+
+}
+
+@media (min-width:0px) and (max-width: 440px) {
+
 }

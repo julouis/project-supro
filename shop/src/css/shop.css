@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 2560px;
   height: auto;
@@ -62,7 +63,7 @@ h1 {
 }
 
 /* grid images */
-.container {
+.container-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 450px 450px 450px;
@@ -136,19 +137,54 @@ i [class*="fi"] {
 
 .filter li {
   float: left;
+  list-style-type: none;
   /*pour IE*/
 }
 
-.filter ul li a {
+.filter li a {
   display: block;
   text-decoration: none;
   text-align: center;
   padding-right: 20px;
 }
 
+.filter li .under {
+  display: none;
+  -webkit-box-shadow: 0px 1px 2px #999;
+          box-shadow: 0px 1px 2px #999;
+  background-color: white;
+}
+
+.filter li .under li {
+  float: none;
+  width: 100%;
+  text-align: left;
+  list-style: none;
+}
+
+.filter li .under a {
+  padding: 10px;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.filter li .under a:hover {
+  border-bottom: none;
+  background-color: white;
+}
+
+.under > a::after {
+  content: "▼";
+  font-size: 12px;
+}
+
 .sort {
   position: relative;
   left: 180px;
+}
+
+nav > ul li:hover .under {
+  display: block;
 }
 
 .filter-icons {
@@ -345,5 +381,28 @@ i [class*="fi"] {
   color: #222;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+.container-footer {
+  margin-left: 20rem;
+  margin-top: 13rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px 300px 300px;
+}
+
+.search input {
+  border: none;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #999;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=shop.css.map */

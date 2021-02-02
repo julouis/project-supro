@@ -55,7 +55,7 @@
                                                             }
                                                             /* grid images */
                                                             
-                                                            .container {
+                                                            .container-grid {
                                                                 display: grid;
                                                                 grid-template-columns: 450px 450px 450px;
                                                                 grid-template-rows: 520px;
@@ -120,19 +120,49 @@
                                                                 }
                                                                 li {
                                                                     float: left;
+                                                                    list-style-type: none;
                                                                     /*pour IE*/
+                                                                    a {
+                                                                        display: block;
+                                                                        text-decoration: none;
+                                                                        text-align: center;
+                                                                        padding-right: 20px;
+                                                                    }
+                                                                    .under {
+                                                                        display: none;
+                                                                        box-shadow: 0px 1px 2px $grey;
+                                                                        background-color: white;
+                                                                        li {
+                                                                            float: none;
+                                                                            width: 100%;
+                                                                            text-align: left;
+                                                                            list-style: none;
+                                                                        }
+                                                                        a {
+                                                                            padding: 10px;
+                                                                            border-bottom: none;
+                                                                            text-decoration: none;
+                                                                        }
+                                                                        a:hover {
+                                                                            border-bottom: none;
+                                                                            background-color: white;
+                                                                        }
+                                                                    }
                                                                 }
-                                                                ul li a {
-                                                                    display: block;
-                                                                    text-decoration: none;
-                                                                    text-align: center;
-                                                                    padding-right: 20px;
-                                                                }
+                                                            }
+                                                            
+                                                            .under>a::after {
+                                                                content: "▼";
+                                                                font-size: 12px;
                                                             }
                                                             
                                                             .sort {
                                                                 position: relative;
                                                                 left: 180px;
+                                                            }
+                                                            
+                                                            nav>ul li:hover .under {
+                                                                display: block;
                                                             }
                                                             
                                                             .filter-icons {
@@ -318,5 +348,31 @@
                                                                     color: $black;
                                                                     letter-spacing: 1px;
                                                                     font-weight: bold;
+                                                                }
+                                                            }
+                                                            
+                                                            .container-footer {
+                                                                margin-left: 20rem;
+                                                                margin-top: 13rem;
+                                                                display: grid;
+                                                                grid-template-columns: 300px 300px 300px 300px 300px;
+                                                            }
+                                                            
+                                                            .search {
+                                                                input {
+                                                                    border: none;
+                                                                }
+                                                            }
+                                                            
+                                                            footer {
+                                                                ul {
+                                                                    li {
+                                                                        list-style-type: none;
+                                                                        a {
+                                                                            text-decoration: none;
+                                                                            color: $grey;
+                                                                            line-height: 2rem;
+                                                                        }
+                                                                    }
                                                                 }
                                                             }

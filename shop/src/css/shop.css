@@ -14,14 +14,18 @@ main {
 
 header {
   border-bottom: solid 1px #999;
+  height: 100px;
 }
 
-header nav {
-  height: 70px;
+header .icons {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-header nav .logo {
-  padding-left: 10rem;
+header .logo {
+  width: 100px;
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
 
 header nav li {
@@ -35,8 +39,22 @@ header nav li a {
   text-decoration: none;
 }
 
+header nav li a:hover {
+  color: #f68773;
+}
+
 header .header-right {
   float: right;
+}
+
+header .header-left {
+  margin-left: 10rem;
+}
+
+.icons-cart {
+  width: 24px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 h1 {
@@ -241,7 +259,7 @@ nav > ul li:hover .under {
 }
 
 .prod a:hover {
-  color: #222;
+  color: #f68773;
 }
 
 .sort a:active {
@@ -257,7 +275,7 @@ nav > ul li:hover .under {
 }
 
 .sort a:hover {
-  color: #222;
+  color: #f68773;
 }
 
 .price {

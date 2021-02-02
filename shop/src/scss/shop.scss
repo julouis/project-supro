@@ -1,6 +1,7 @@
                                                             @import "_variables.scss";
                                                             body {
-                                                                width: 100%;
+                                                                width: 2560px;
+                                                                height: auto;
                                                                 margin: 0;
                                                                 padding: 0;
                                                                 font-family: $font;
@@ -12,14 +13,24 @@
                                                             }
                                                             
                                                             header {
-                                                                ul {
-                                                                    list-style-type: none;
+                                                                border-bottom: solid 1px $grey;
+                                                                nav {
+                                                                    height: 70px;
+                                                                    .logo {
+                                                                        padding-left: 10rem;
+                                                                    }
                                                                     li {
+                                                                        display: inline-block;
+                                                                        list-style-type: none;
+                                                                        padding-right: 2rem;
                                                                         a {
                                                                             color: $black;
                                                                             text-decoration: none;
                                                                         }
                                                                     }
+                                                                }
+                                                                .header-right {
+                                                                    float: right;
                                                                 }
                                                             }
                                                             
@@ -44,9 +55,8 @@
                                                             }
                                                             /* grid images */
                                                             
-                                                            .container {
+                                                            .container-grid {
                                                                 display: grid;
-                                                                float: right;
                                                                 grid-template-columns: 450px 450px 450px;
                                                                 grid-template-rows: 520px;
                                                             }
@@ -63,9 +73,10 @@
                                                             .top {
                                                                 display: inline-block;
                                                                 position: relative;
-                                                                margin-left: 240px;
-                                                                top: 50px;
-                                                                ;
+                                                                padding-bottom: 3rem;
+                                                                .shop {
+                                                                    margin-bottom: 2rem;
+                                                                }
                                                                 ul {
                                                                     padding: 0;
                                                                     margin: 0;
@@ -88,15 +99,20 @@
                                                             
                                                             .links {
                                                                 position: relative;
-                                                                top: -10px;
+                                                                ul {
+                                                                    li {
+                                                                        padding-right: 1rem;
+                                                                        margin-bottom: 1rem;
+                                                                    }
+                                                                }
                                                             }
                                                             
                                                             .filter {
                                                                 display: inline-block;
                                                                 position: relative;
+                                                                margin-left: 23rem;
+                                                                margin-bottom: -2.5rem;
                                                                 width: 850px;
-                                                                margin-left: 690px;
-                                                                margin-bottom: 60px;
                                                                 ul {
                                                                     padding: 0;
                                                                     margin: 0;
@@ -104,19 +120,49 @@
                                                                 }
                                                                 li {
                                                                     float: left;
+                                                                    list-style-type: none;
                                                                     /*pour IE*/
+                                                                    a {
+                                                                        display: block;
+                                                                        text-decoration: none;
+                                                                        text-align: center;
+                                                                        padding-right: 20px;
+                                                                    }
+                                                                    .under {
+                                                                        display: none;
+                                                                        box-shadow: 0px 1px 2px $grey;
+                                                                        background-color: white;
+                                                                        li {
+                                                                            float: none;
+                                                                            width: 100%;
+                                                                            text-align: left;
+                                                                            list-style: none;
+                                                                        }
+                                                                        a {
+                                                                            padding: 10px;
+                                                                            border-bottom: none;
+                                                                            text-decoration: none;
+                                                                        }
+                                                                        a:hover {
+                                                                            border-bottom: none;
+                                                                            background-color: white;
+                                                                        }
+                                                                    }
                                                                 }
-                                                                ul li a {
-                                                                    display: block;
-                                                                    text-decoration: none;
-                                                                    text-align: center;
-                                                                    padding-right: 20px;
-                                                                }
+                                                            }
+                                                            
+                                                            .under>a::after {
+                                                                content: "▼";
+                                                                font-size: 12px;
                                                             }
                                                             
                                                             .sort {
                                                                 position: relative;
                                                                 left: 180px;
+                                                            }
+                                                            
+                                                            nav>ul li:hover .under {
+                                                                display: block;
                                                             }
                                                             
                                                             .filter-icons {
@@ -128,8 +174,8 @@
                                                             .sidebar {
                                                                 width: 220px;
                                                                 float: left;
-                                                                margin-left: 50px;
-                                                                margin-top: 50px;
+                                                                margin-left: 15rem;
+                                                                padding-right: 4rem;
                                                                 font-size: 1rem;
                                                                 .icons {
                                                                     width: 13px;
@@ -302,5 +348,31 @@
                                                                     color: $black;
                                                                     letter-spacing: 1px;
                                                                     font-weight: bold;
+                                                                }
+                                                            }
+                                                            
+                                                            .container-footer {
+                                                                margin-left: 20rem;
+                                                                margin-top: 13rem;
+                                                                display: grid;
+                                                                grid-template-columns: 300px 300px 300px 300px 300px;
+                                                            }
+                                                            
+                                                            .search {
+                                                                input {
+                                                                    border: none;
+                                                                }
+                                                            }
+                                                            
+                                                            footer {
+                                                                ul {
+                                                                    li {
+                                                                        list-style-type: none;
+                                                                        a {
+                                                                            text-decoration: none;
+                                                                            color: $grey;
+                                                                            line-height: 2rem;
+                                                                        }
+                                                                    }
                                                                 }
                                                             }

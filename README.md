@@ -13,5 +13,7 @@
 ### Projects members:
 
 > [Zena Alsibaai](https://github.com/Zena-Alsibaai)
+
 > [William Vasseaux](https://github.com/Williamson911)
+
 > [Julien Louis](https://github.com/julouis)

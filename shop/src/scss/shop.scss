@@ -1,396 +1,403 @@
-                                                            @import "_variables.scss";
-                                                            body {
-                                                                width: 2560px;
-                                                                height: auto;
-                                                                margin: 0;
-                                                                padding: 0;
-                                                                font-family: $font;
-                                                            }
-                                                            
-                                                            main {
-                                                                width: 95%;
-                                                                margin: auto;
-                                                            }
-                                                            
-                                                            header {
-                                                                border-bottom: solid 1px $grey;
-                                                                height: 100px;
-                                                                .icons {
-                                                                    padding-left: 1rem;
-                                                                    padding-right: 1rem;
-                                                                }
-                                                                .logo {
-                                                                    width: 100px;
-                                                                    margin-top: 1rem;
-                                                                    padding-left: 1rem;
-                                                                }
-                                                                nav {
-                                                                    li {
-                                                                        display: inline-block;
-                                                                        list-style-type: none;
-                                                                        padding-right: 2rem;
-                                                                        a {
-                                                                            color: $black;
-                                                                            text-decoration: none;
-                                                                        }
-                                                                        a:hover {
-                                                                            color: $star;
-                                                                        }
-                                                                    }
-                                                                }
-                                                                .header-right {
-                                                                    float: right;
-                                                                }
-                                                                .header-left {
-                                                                    margin-left: 10rem;
-                                                                }
-                                                            }
-                                                            
-                                                            .icons-cart {
-                                                                width: 24px;
-                                                                padding-left: 1rem;
-                                                                padding-right: 1rem;
-                                                            }
-                                                            
-                                                            h1 {
-                                                                font-size: 3rem;
-                                                            }
-                                                            /*slider*/
-                                                            
-                                                            .slidecontainer {
-                                                                width: 100%;
-                                                                .slider {
-                                                                    -webkit-appearance: none;
-                                                                    appearance: none;
-                                                                    width: 100%;
-                                                                    height: 5px;
-                                                                    background: #F68773;
-                                                                    outline: none;
-                                                                    opacity: 0.7;
-                                                                    -webkit-transition: .2s;
-                                                                    transition: opacity .2s;
-                                                                }
-                                                            }
-                                                            /* grid images */
-                                                            
-                                                            .container-grid {
-                                                                display: grid;
-                                                                grid-template-columns: 450px 450px 450px;
-                                                                grid-template-rows: 520px;
-                                                            }
-                                                            
-                                                            .icons {
-                                                                width: 20px;
-                                                            }
-                                                            
-                                                            i [class*="fi"] {
-                                                                color: $star;
-                                                            }
-                                                            /* top menu */
-                                                            
-                                                            .top {
-                                                                display: inline-block;
-                                                                position: relative;
-                                                                padding-bottom: 3rem;
-                                                                .shop {
-                                                                    margin-bottom: 2rem;
-                                                                }
-                                                                ul {
-                                                                    padding: 0;
-                                                                    margin: 0;
-                                                                    list-style-type: none;
-                                                                }
-                                                                li {
-                                                                    float: left;
-                                                                    /*pour IE*/
-                                                                }
-                                                                ul li a {
-                                                                    display: block;
-                                                                    float: left;
-                                                                    text-decoration: none;
-                                                                    color: $grey;
-                                                                    text-align: center;
-                                                                    padding-right: 5px;
-                                                                    font-size: 1rem;
-                                                                }
-                                                            }
-                                                            
-                                                            .links {
-                                                                position: relative;
-                                                                ul {
-                                                                    li {
-                                                                        padding-right: 1rem;
-                                                                        margin-bottom: 1rem;
-                                                                    }
-                                                                }
-                                                            }
-                                                            
-                                                            .filter {
-                                                                display: inline-block;
-                                                                position: relative;
-                                                                margin-left: 23rem;
-                                                                margin-bottom: -2.5rem;
-                                                                width: 850px;
-                                                                ul {
-                                                                    padding: 0;
-                                                                    margin: 0;
-                                                                    list-style-type: none;
-                                                                }
-                                                                li {
-                                                                    float: left;
-                                                                    list-style-type: none;
-                                                                    /*pour IE*/
-                                                                    a {
-                                                                        display: block;
-                                                                        text-decoration: none;
-                                                                        text-align: center;
-                                                                        padding-right: 20px;
-                                                                    }
-                                                                    .under {
-                                                                        display: none;
-                                                                        box-shadow: 0px 1px 2px $grey;
-                                                                        background-color: white;
-                                                                        li {
-                                                                            float: none;
-                                                                            width: 100%;
-                                                                            text-align: left;
-                                                                            list-style: none;
-                                                                        }
-                                                                        a {
-                                                                            padding: 10px;
-                                                                            border-bottom: none;
-                                                                            text-decoration: none;
-                                                                        }
-                                                                        a:hover {
-                                                                            border-bottom: none;
-                                                                            background-color: white;
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                            
-                                                            .under>a::after {
-                                                                content: "▼";
-                                                                font-size: 12px;
-                                                            }
-                                                            
-                                                            .sort {
-                                                                position: relative;
-                                                                left: 180px;
-                                                            }
-                                                            
-                                                            nav>ul li:hover .under {
-                                                                display: block;
-                                                            }
-                                                            
-                                                            .filter-icons {
-                                                                position: relative;
-                                                                left: 430px;
-                                                            }
-                                                            /* sidebar */
-                                                            
-                                                            .sidebar {
-                                                                width: 220px;
-                                                                float: left;
-                                                                margin-left: 15rem;
-                                                                padding-right: 4rem;
-                                                                font-size: 1rem;
-                                                                .icons {
-                                                                    width: 13px;
-                                                                    padding-right: 0.3rem;
-                                                                }
-                                                                img {
-                                                                    width: 85px;
-                                                                }
-                                                                fieldset {
-                                                                    border: none;
-                                                                    .prod {
-                                                                        ul {
-                                                                            li {
-                                                                                list-style-type: none;
-                                                                                padding-bottom: 20px;
-                                                                                a {
-                                                                                    text-decoration: none;
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                            
-                                                            .prod {
-                                                                position: relative;
-                                                                margin-left: -39px;
-                                                                a:active {
-                                                                    color: black;
-                                                                }
-                                                                a:link {
-                                                                    color: $grey;
-                                                                }
-                                                                a:visited {
-                                                                    color: gray;
-                                                                }
-                                                                a:hover {
-                                                                    color: $star;
-                                                                }
-                                                            }
-                                                            
-                                                            .sort {
-                                                                a:active {
-                                                                    color: black;
-                                                                }
-                                                                a:link {
-                                                                    color: $grey;
-                                                                }
-                                                                a:visited {
-                                                                    color: gray;
-                                                                }
-                                                                a:hover {
-                                                                    color: $star;
-                                                                }
-                                                            }
-                                                            
-                                                            .price {
-                                                                position: relative;
-                                                                margin-left: -39px;
-                                                                li {
-                                                                    list-style-type: none;
-                                                                    color: $grey;
-                                                                    padding-bottom: 20px;
-                                                                }
-                                                            }
-                                                            
-                                                            .more {
-                                                                position: relative;
-                                                            }
-                                                            
-                                                            .colors {
-                                                                padding-bottom: 30px;
-                                                                ;
-                                                                div {
-                                                                    float: left;
-                                                                }
-                                                                .inline-colors {
-                                                                    li {
-                                                                        color: $black;
-                                                                    }
-                                                                }
-                                                                ul {
-                                                                    li {
-                                                                        list-style-type: none;
-                                                                        color: $grey;
-                                                                        padding-bottom: 60px;
-                                                                    }
-                                                                }
-                                                            }
-                                                            
-                                                            .inline-colors {
-                                                                position: relative;
-                                                                margin-left: -39px;
-                                                            }
-                                                            
-                                                            .align-colors {
-                                                                margin-left: 20px;
-                                                            }
-                                                            
-                                                            .check-black {
-                                                                margin-left: 89px;
-                                                            }
-                                                            
-                                                            .check-blue {
-                                                                margin-left: 97px;
-                                                            }
-                                                            
-                                                            .check-gold {
-                                                                margin-left: 95px;
-                                                            }
-                                                            
-                                                            .check-nude {
-                                                                margin-left: 90px;
-                                                            }
-                                                            
-                                                            .check-orange {
-                                                                margin-left: 77px;
-                                                            }
-                                                            
-                                                            .check-red {
-                                                                margin-left: 101px;
-                                                            }
-                                                            
-                                                            .black {
-                                                                width: 20px;
-                                                                height: 20px;
-                                                                background-color: $black;
-                                                                border-radius: 100px;
-                                                            }
-                                                            
-                                                            .blue {
-                                                                width: 20px;
-                                                                height: 20px;
-                                                                background-color: $blue;
-                                                                border-radius: 100px;
-                                                            }
-                                                            
-                                                            .gold {
-                                                                width: 20px;
-                                                                height: 20px;
-                                                                background-color: $gold;
-                                                                border-radius: 100px;
-                                                            }
-                                                            
-                                                            .orange {
-                                                                width: 20px;
-                                                                height: 20px;
-                                                                background-color: $orange;
-                                                                border-radius: 100px;
-                                                            }
-                                                            
-                                                            .nude {
-                                                                width: 20px;
-                                                                height: 20px;
-                                                                background-color: $nude;
-                                                                border-radius: 100px;
-                                                            }
-                                                            
-                                                            .red {
-                                                                width: 20px;
-                                                                height: 20px;
-                                                                background-color: $red;
-                                                                border-radius: 100px;
-                                                            }
-                                                            
-                                                            .more {
-                                                                display: flex;
-                                                                justify-content: center;
-                                                                a {
-                                                                    color: $black;
-                                                                    letter-spacing: 1px;
-                                                                    font-weight: bold;
-                                                                }
-                                                            }
-                                                            
-                                                            .container-footer {
-                                                                margin-left: 20rem;
-                                                                margin-top: 13rem;
-                                                                display: grid;
-                                                                grid-template-columns: 300px 300px 300px 300px 300px;
-                                                            }
-                                                            
-                                                            .search {
-                                                                input {
-                                                                    border: none;
-                                                                }
-                                                            }
-                                                            
-                                                            footer {
-                                                                ul {
-                                                                    li {
-                                                                        list-style-type: none;
-                                                                        a {
-                                                                            text-decoration: none;
-                                                                            color: $grey;
-                                                                            line-height: 2rem;
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
+@import "_variables.scss";
+
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../../../fonts/Roboto/Roboto-Regular.ttf"),
+		url("../../../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+body {
+	width: 2560px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+}
+
+main {
+	width: 95%;
+	margin: auto;
+}
+
+header {
+	border-bottom: solid 1px $grey;
+	height: 100px;
+	.icons {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.logo {
+		width: 100px;
+		margin-top: 1rem;
+		padding-left: 1rem;
+	}
+	nav {
+		li {
+			display: inline-block;
+			list-style-type: none;
+			padding-right: 2rem;
+			a {
+				color: $black;
+				text-decoration: none;
+			}
+			a:hover {
+				color: $star;
+			}
+		}
+	}
+	.header-right {
+		float: right;
+	}
+	.header-left {
+		margin-left: 10rem;
+	}
+}
+
+.icons-cart {
+	width: 24px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+h1 {
+	font-size: 3rem;
+}
+/*slider*/
+
+.slidecontainer {
+	width: 100%;
+	.slider {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 100%;
+		height: 5px;
+		background: #f68773;
+		outline: none;
+		opacity: 0.7;
+		-webkit-transition: 0.2s;
+		transition: opacity 0.2s;
+	}
+}
+/* grid images */
+
+.container-grid {
+	display: grid;
+	grid-template-columns: 450px 450px 450px;
+	grid-template-rows: 520px;
+}
+
+.icons {
+	width: 20px;
+}
+
+i [class*="fi"] {
+	color: $star;
+}
+/* top menu */
+
+.top {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3rem;
+	.shop {
+		margin-bottom: 2rem;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	li {
+		float: left;
+		/*pour IE*/
+	}
+	ul li a {
+		display: block;
+		float: left;
+		text-decoration: none;
+		color: $grey;
+		text-align: center;
+		padding-right: 5px;
+		font-size: 1rem;
+	}
+}
+
+.links {
+	position: relative;
+	ul {
+		li {
+			padding-right: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.filter {
+	display: inline-block;
+	position: relative;
+	margin-left: 23rem;
+	margin-bottom: -2.5rem;
+	width: 850px;
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	li {
+		float: left;
+		list-style-type: none;
+		/*pour IE*/
+		a {
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			padding-right: 20px;
+		}
+		.under {
+			display: none;
+			box-shadow: 0px 1px 2px $grey;
+			background-color: white;
+			li {
+				float: none;
+				width: 100%;
+				text-align: left;
+				list-style: none;
+			}
+			a {
+				padding: 10px;
+				border-bottom: none;
+				text-decoration: none;
+			}
+			a:hover {
+				border-bottom: none;
+				background-color: white;
+			}
+		}
+	}
+}
+
+.under > a::after {
+	content: "▼";
+	font-size: 12px;
+}
+
+.sort {
+	position: relative;
+	left: 180px;
+}
+
+nav > ul li:hover .under {
+	display: block;
+}
+
+.filter-icons {
+	position: relative;
+	left: 430px;
+}
+/* sidebar */
+
+.sidebar {
+	width: 220px;
+	float: left;
+	margin-left: 15rem;
+	padding-right: 4rem;
+	font-size: 1rem;
+	.icons {
+		width: 13px;
+		padding-right: 0.3rem;
+	}
+	img {
+		width: 85px;
+	}
+	fieldset {
+		border: none;
+		.prod {
+			ul {
+				li {
+					list-style-type: none;
+					padding-bottom: 20px;
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.prod {
+	position: relative;
+	margin-left: -39px;
+	a:active {
+		color: black;
+	}
+	a:link {
+		color: $grey;
+	}
+	a:visited {
+		color: gray;
+	}
+	a:hover {
+		color: $star;
+	}
+}
+
+.sort {
+	a:active {
+		color: black;
+	}
+	a:link {
+		color: $grey;
+	}
+	a:visited {
+		color: gray;
+	}
+	a:hover {
+		color: $star;
+	}
+}
+
+.price {
+	position: relative;
+	margin-left: -39px;
+	li {
+		list-style-type: none;
+		color: $grey;
+		padding-bottom: 20px;
+	}
+}
+
+.more {
+	position: relative;
+}
+
+.colors {
+	padding-bottom: 30px;
+	div {
+		float: left;
+	}
+	.inline-colors {
+		li {
+			color: $black;
+		}
+	}
+	ul {
+		li {
+			list-style-type: none;
+			color: $grey;
+			padding-bottom: 60px;
+		}
+	}
+}
+
+.inline-colors {
+	position: relative;
+	margin-left: -39px;
+}
+
+.align-colors {
+	margin-left: 20px;
+}
+
+.check-black {
+	margin-left: 89px;
+}
+
+.check-blue {
+	margin-left: 97px;
+}
+
+.check-gold {
+	margin-left: 95px;
+}
+
+.check-nude {
+	margin-left: 90px;
+}
+
+.check-orange {
+	margin-left: 77px;
+}
+
+.check-red {
+	margin-left: 101px;
+}
+
+.black {
+	width: 20px;
+	height: 20px;
+	background-color: $black;
+	border-radius: 100px;
+}
+
+.blue {
+	width: 20px;
+	height: 20px;
+	background-color: $blue;
+	border-radius: 100px;
+}
+
+.gold {
+	width: 20px;
+	height: 20px;
+	background-color: $gold;
+	border-radius: 100px;
+}
+
+.orange {
+	width: 20px;
+	height: 20px;
+	background-color: $orange;
+	border-radius: 100px;
+}
+
+.nude {
+	width: 20px;
+	height: 20px;
+	background-color: $nude;
+	border-radius: 100px;
+}
+
+.red {
+	width: 20px;
+	height: 20px;
+	background-color: $red;
+	border-radius: 100px;
+}
+
+.more {
+	display: flex;
+	justify-content: center;
+	a {
+		color: $black;
+		letter-spacing: 1px;
+		font-weight: bold;
+	}
+}
+
+.container-footer {
+	margin-left: 20rem;
+	margin-top: 13rem;
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px 300px;
+}
+
+.search {
+	input {
+		border: none;
+	}
+}
+
+footer {
+	ul {
+		li {
+			list-style-type: none;
+			a {
+				text-decoration: none;
+				color: $grey;
+				line-height: 2rem;
+			}
+		}
+	}
+}
